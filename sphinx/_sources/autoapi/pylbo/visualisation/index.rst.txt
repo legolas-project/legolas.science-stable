@@ -1,0 +1,46 @@
+:py:mod:`pylbo.visualisation`
+=============================
+
+.. py:module:: pylbo.visualisation
+
+.. autoapi-nested-parse::
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   api/index.rst
+   continua/index.rst
+   derived_eigenfunctions/index.rst
+   eigenfunction_interface/index.rst
+   eigenfunctions/index.rst
+   figure_manager/index.rst
+   legend_interface/index.rst
+   matrices/index.rst
+   profiles/index.rst
+   spectra/index.rst
+
+

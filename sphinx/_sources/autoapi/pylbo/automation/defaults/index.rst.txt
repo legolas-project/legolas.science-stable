@@ -1,0 +1,38 @@
+:py:mod:`pylbo.automation.defaults`
+===================================
+
+.. py:module:: pylbo.automation.defaults
+
+.. autoapi-nested-parse::
+
+   
+   ..
+       !! processed by numpydoc !!
+
+
+Module Contents
+---------------
+
+.. py:data:: namelist_items
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+

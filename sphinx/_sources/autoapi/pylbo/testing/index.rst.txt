@@ -1,0 +1,146 @@
+:py:mod:`pylbo.testing`
+=======================
+
+.. py:module:: pylbo.testing
+
+.. autoapi-nested-parse::
+
+   
+   ..
+       !! processed by numpydoc !!
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   pylbo.testing.FakeDataSet
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   pylbo.testing.pickle_dataseries_to_file
+   pylbo.testing.load_pickled_dataseries
+
+
+
+.. py:function:: pickle_dataseries_to_file(series, filepath)
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+.. py:function:: load_pickled_dataseries(filepath)
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+.. py:class:: FakeDataSet(datfile, seed=None)
+
+   Bases: :py:obj:`pylbo.data_containers.LegolasDataSet`
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+   .. py:method:: _set_test_equilibria(self)
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: _set_test_eigenvalues(self)
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+

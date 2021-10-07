@@ -1,0 +1,40 @@
+:py:mod:`pylbo.automation`
+==========================
+
+.. py:module:: pylbo.automation
+
+.. autoapi-nested-parse::
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   api/index.rst
+   defaults/index.rst
+   generator/index.rst
+   runner/index.rst
+
+
