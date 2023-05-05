@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pylbo.data_containers &mdash; Pylbo stable documentation</title>
@@ -12,10 +12,11 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -29,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Pylbo
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Pylbo
           </a>
               <div class="version">
-                1.1.3 - stable
+                2.0.0 - stable
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -52,7 +57,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../_version/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo._version</span></code></a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.data_containers</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../exceptions/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.exceptions</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../file_handler/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.file_handler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../testing/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.testing</span></code></a></li>
 </ul>
 </li>
@@ -73,10 +77,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../index.html">API Reference</a> &raquo;</li>
-          <li><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a> &raquo;</li>
-      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.data_containers</span></code></li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.data_containers</span></code></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/autoapi/pylbo/data_containers/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -87,16 +91,12 @@
            <div itemprop="articleBody">
              
   <section id="module-pylbo.data_containers">
-<span id="pylbo-data-containers"></span><h1><a class="reference internal" href="#module-pylbo.data_containers" title="pylbo.data_containers"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.data_containers</span></code></a><a class="headerlink" href="#module-pylbo.data_containers" title="Permalink to this headline"></a></h1>
+<span id="pylbo-data-containers"></span><h1><a class="reference internal" href="#module-pylbo.data_containers" title="pylbo.data_containers"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.data_containers</span></code></a><a class="headerlink" href="#module-pylbo.data_containers" title="Permalink to this heading"></a></h1>
 <section id="module-contents">
-<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline"></a></h2>
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this heading"></a></h2>
 <section id="classes">
-<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h3>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this heading"></a></h3>
+<table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.data_containers.LegolasDataContainer" title="pylbo.data_containers.LegolasDataContainer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LegolasDataContainer</span></code></a></p></td>
 <td><p>Baseclass for a Legolas data container.</p></td>
@@ -109,119 +109,136 @@
 </tr>
 </tbody>
 </table>
+</section>
+<section id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this heading"></a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.data_containers.ensure_dataset" title="pylbo.data_containers.ensure_dataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ensure_dataset</span></code></a>(→ None)</p></td>
+<td><p>Ensures that the given data is a <a class="reference internal" href="#pylbo.data_containers.LegolasDataSet" title="pylbo.data_containers.LegolasDataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">LegolasDataSet</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pylbo.data_containers.ensure_dataseries" title="pylbo.data_containers.ensure_dataseries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ensure_dataseries</span></code></a>(→ None)</p></td>
+<td><p>Ensures that the given data is a <a class="reference internal" href="#pylbo.data_containers.LegolasDataSeries" title="pylbo.data_containers.LegolasDataSeries"><code class="xref py py-class docutils literal notranslate"><span class="pre">LegolasDataSeries</span></code></a>.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py function">
+<dt class="sig sig-object py" id="pylbo.data_containers.ensure_dataset">
+<span class="sig-prename descclassname"><span class="pre">pylbo.data_containers.</span></span><span class="sig-name descname"><span class="pre">ensure_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#ensure_dataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.ensure_dataset" title="Permalink to this definition"></a></dt>
+<dd><p>Ensures that the given data is a <a class="reference internal" href="#pylbo.data_containers.LegolasDataSet" title="pylbo.data_containers.LegolasDataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">LegolasDataSet</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pylbo.data_containers.ensure_dataseries">
+<span class="sig-prename descclassname"><span class="pre">pylbo.data_containers.</span></span><span class="sig-name descname"><span class="pre">ensure_dataseries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#ensure_dataseries"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.ensure_dataseries" title="Permalink to this definition"></a></dt>
+<dd><p>Ensures that the given data is a <a class="reference internal" href="#pylbo.data_containers.LegolasDataSeries" title="pylbo.data_containers.LegolasDataSeries"><code class="xref py py-class docutils literal notranslate"><span class="pre">LegolasDataSeries</span></code></a>.</p>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pylbo.data_containers.</span></span><span class="sig-name descname"><span class="pre">LegolasDataContainer</span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pylbo.data_containers.</span></span><span class="sig-name descname"><span class="pre">LegolasDataContainer</span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
 <p>Baseclass for a Legolas data container.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.continua">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">continua</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.continua"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.continua" title="Permalink to this definition"></a></dt>
-<dd><p>Retrieves the continua based on the type of subclass, returns a dictionary
-with the names of the continua as keys.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference internal" href="#pylbo.data_containers.LegolasDataSet" title="pylbo.data_containers.LegolasDataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">LegolasDataSet</span></code></a>: the values are single Numpy arrays.</p></li>
-<li><p><a class="reference internal" href="#pylbo.data_containers.LegolasDataSeries" title="pylbo.data_containers.LegolasDataSeries"><code class="xref py py-class docutils literal notranslate"><span class="pre">LegolasDataSeries</span></code></a>: every value is an array of Numpy arrays,
-one for each dataset in the series.</p></li>
-</ul>
-</div></blockquote>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>continua</strong> – Dictionary containing the continua values.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)">dict</a></p>
-</dd>
-</dl>
-</dd></dl>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">continua</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.continua"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.continua" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.parameters">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.parameters" title="Permalink to this definition"></a></dt>
-<dd><p>Retrieves the parameters based on the type of subclass, returns a dictionary
-with the parameter names as keys.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference internal" href="#pylbo.data_containers.LegolasDataSet" title="pylbo.data_containers.LegolasDataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">LegolasDataSet</span></code></a>: values are single items.</p></li>
-<li><p><a class="reference internal" href="#pylbo.data_containers.LegolasDataSeries" title="pylbo.data_containers.LegolasDataSeries"><code class="xref py py-class docutils literal notranslate"><span class="pre">LegolasDataSeries</span></code></a>: values are Numpy arrays.</p></li>
-</ul>
-</div></blockquote>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>parameters</strong> – Dictionary containing the parameters.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)">dict</a></p>
-</dd>
-</dl>
-</dd></dl>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.parameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.efs_written">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">efs_written</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.efs_written"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.efs_written" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.has_efs">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_efs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.has_efs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.has_efs" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.ef_grid">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">ef_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.ef_grid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.ef_grid" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ef_grid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.ef_grid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.ef_grid" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.ef_names">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">ef_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.ef_names" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ef_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.ef_names" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.derived_efs_written">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">derived_efs_written</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.derived_efs_written"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.derived_efs_written" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.has_background">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_background</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.has_background"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.has_background" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.has_derived_efs">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_derived_efs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.has_derived_efs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.has_derived_efs" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.derived_ef_names">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">derived_ef_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.derived_ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.derived_ef_names" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">derived_ef_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.derived_ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.derived_ef_names" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.has_ef_subset">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_ef_subset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.has_ef_subset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.has_ef_subset" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.has_matrices">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_matrices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.has_matrices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.has_matrices" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.has_eigenvectors">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_eigenvectors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.has_eigenvectors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.has_eigenvectors" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.has_residuals">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_residuals</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.has_residuals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.has_residuals" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.get_sound_speed">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">get_sound_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_sound_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_sound_speed" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_sound_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_sound_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_sound_speed" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.get_alfven_speed">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">get_alfven_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_alfven_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_alfven_speed" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_alfven_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_alfven_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_alfven_speed" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.get_tube_speed">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">get_tube_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_tube_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_tube_speed" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_tube_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_tube_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_tube_speed" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.get_reynolds_nb">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">get_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_reynolds_nb" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_reynolds_nb" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.get_magnetic_reynolds_nb">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">get_magnetic_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_magnetic_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_magnetic_reynolds_nb" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_magnetic_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_magnetic_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_magnetic_reynolds_nb" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataContainer.get_k0_squared">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">get_k0_squared</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_k0_squared"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_k0_squared" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_k0_squared</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataContainer.get_k0_squared"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataContainer.get_k0_squared" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pylbo.data_containers.</span></span><span class="sig-name descname"><span class="pre">LegolasDataSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datfile</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pylbo.data_containers.</span></span><span class="sig-name descname"><span class="pre">LegolasDataSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datfile</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pylbo.data_containers.LegolasDataContainer" title="pylbo.data_containers.LegolasDataContainer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LegolasDataContainer</span></code></a></p>
 <p>Main container for a single Legolas dataset.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>datfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike" title="(in Python v3.10)"><em>PathLike</em></a>) – Path to the datfile.</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>datfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike" title="(in Python v3.11)"><em>PathLike</em></a>) – Path to the datfile.</p>
 </dd>
 </dl>
 <dl class="py attribute">
@@ -229,8 +246,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">header</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.header" title="Permalink to this definition"></a></dt>
 <dd><p>The datfile header.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)">dict</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)">dict</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -240,8 +257,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">grid</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.grid" title="Permalink to this definition"></a></dt>
 <dd><p>The base grid.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -251,8 +268,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">grid_gauss</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.grid_gauss" title="Permalink to this definition"></a></dt>
 <dd><p>The Gaussian grid.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -262,8 +279,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">equilibria</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.equilibria" title="Permalink to this definition"></a></dt>
 <dd><p>Dictionary containing the equilibrium arrays.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)">dict</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)">dict</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -273,8 +290,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">eigenvalues</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.eigenvalues" title="Permalink to this definition"></a></dt>
 <dd><p>Array containing the complex eigenvalues.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -284,8 +301,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">geometry</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.geometry" title="Permalink to this definition"></a></dt>
 <dd><p>The geometry.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -295,8 +312,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">scale_factor</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.scale_factor" title="Permalink to this definition"></a></dt>
 <dd><p>Array with the scale factor. One for Cartesian geometries, r for cylindrical.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -306,8 +323,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">x_start</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.x_start" title="Permalink to this definition"></a></dt>
 <dd><p>Start of the grid.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -317,8 +334,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">x_end</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.x_end" title="Permalink to this definition"></a></dt>
 <dd><p>End of the grid</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -328,8 +345,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">gridpoints</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.gridpoints" title="Permalink to this definition"></a></dt>
 <dd><p>The number of base gridpoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -339,8 +356,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">gauss_gridpoints</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.gauss_gridpoints" title="Permalink to this definition"></a></dt>
 <dd><p>The number of Gaussian gridpoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -350,8 +367,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">matrix_gridpoints</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.matrix_gridpoints" title="Permalink to this definition"></a></dt>
 <dd><p>The dimension of the matrix.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -361,8 +378,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">ef_gridpoints</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.ef_gridpoints" title="Permalink to this definition"></a></dt>
 <dd><p>The number of eigenfunction gridpoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -372,8 +389,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">gamma</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.gamma" title="Permalink to this definition"></a></dt>
 <dd><p>The ratio of specific heats.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -383,8 +400,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">eq_type</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.eq_type" title="Permalink to this definition"></a></dt>
 <dd><p>The type of equilibrium selected.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -394,8 +411,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">cgs</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.cgs" title="Permalink to this definition"></a></dt>
 <dd><p>If <cite>True</cite>, all units are in cgs.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)">bool</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -405,8 +422,8 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">units</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.units" title="Permalink to this definition"></a></dt>
 <dd><p>Dictionary containing the unit normalisations.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)">dict</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)">dict</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -416,311 +433,239 @@ with the parameter names as keys.</p>
 <span class="sig-name descname"><span class="pre">eq_names</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.eq_names" title="Permalink to this definition"></a></dt>
 <dd><p>Array containing the names of the equilibrium arrays.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
+<dl class="py property">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.legolas_version">
-<span class="sig-name descname"><span class="pre">legolas_version</span></span><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.legolas_version" title="Permalink to this definition"></a></dt>
-<dd><p>The current Legolas version.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../_version/index.html#pylbo._version.VersionHandler" title="pylbo._version.VersionHandler">VersionHandler</a></p>
-</dd>
-</dl>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">legolas_version</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../_version/index.html#pylbo._version.VersionHandler" title="pylbo._version.VersionHandler"><span class="pre">pylbo._version.VersionHandler</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.legolas_version"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.legolas_version" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.k2_str">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">k2_str</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.k2_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.k2_str" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the <span class="math notranslate nohighlight">\(k_2\)</span> string.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.efs_written">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">efs_written</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.efs_written"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.efs_written" title="Permalink to this definition"></a></dt>
-<dd><p>Checks if eigenfunctions are present.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>efs_written</strong> – If <cite>True</cite>, eigenfunctions are present in the datfile.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)">bool</a></p>
-</dd>
-</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.k3_str">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">k3_str</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.k3_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.k3_str" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the <span class="math notranslate nohighlight">\(k_3\)</span> string.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.ef_names">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">ef_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.ef_names" title="Permalink to this definition"></a></dt>
-<dd><p>Retrieves the eigenfunction names.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>ef_names</strong> – Array containing the names of the eigenfunctions as strings.
-None if no eigenfunctions are present.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
-</dd>
-</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.u1_str">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">u1_str</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.u1_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.u1_str" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the <span class="math notranslate nohighlight">\(u_1\)</span> string.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.u2_str">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">u2_str</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.u2_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.u2_str" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the <span class="math notranslate nohighlight">\(u_2\)</span> string.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.u3_str">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">u3_str</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.u3_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.u3_str" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the <span class="math notranslate nohighlight">\(u_3\)</span> string.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.continua">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">continua</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.continua"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.continua" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the continua in a dict with the continua names as keys.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.parameters">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the parameters in a dict with the parameter names as keys</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.has_background">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_background</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.has_background"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.has_background" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> if background is present.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.has_efs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_efs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.has_efs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.has_efs" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> if eigenfunctions are present.</p>
+</dd></dl>
+
+<dl class="py property">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.ef_grid">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">ef_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.ef_grid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.ef_grid" title="Permalink to this definition"></a></dt>
-<dd><p>Retrieves the eigenfunction grid.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>ef_grid</strong> – The eigenfunction grid. Returns None if eigenfunctions are not present.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
-</dd>
-</dl>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ef_grid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.ef_grid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.ef_grid" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the eigenfunction grid, None if eigenfunctions are not present.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.ef_subset">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">ef_subset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.ef_subset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.ef_subset" title="Permalink to this definition"></a></dt>
-<dd><p>Checks if dataset contains a subset of the eigenfunctions</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><cite>True</cite> if subset present, <cite>False</cite> otherwise</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)">bool</a></p>
-</dd>
-</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.ef_names">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ef_names</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.ef_names" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieves the eigenfunction names, None if eigenfunctions are not present.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.derived_efs_written">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">derived_efs_written</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.derived_efs_written"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.derived_efs_written" title="Permalink to this definition"></a></dt>
-<dd><p>Checks if derived eigenfunctions are present.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>If <cite>True</cite>, derived eigenfunctions are present in the datfile.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)">bool</a></p>
-</dd>
-</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.has_derived_efs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_derived_efs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.has_derived_efs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.has_derived_efs" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> if derived eigenfunctions are present.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="py property">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.derived_ef_names">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">derived_ef_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.derived_ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.derived_ef_names" title="Permalink to this definition"></a></dt>
-<dd><p>Retrieves the derived eigenfunction names.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>Array containing the names of the derived eigenfunctions as strings.
-None if no derived eigenfunctions are present.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
-</dd>
-</dl>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">derived_ef_names</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.derived_ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.derived_ef_names" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieves the derived eigenfunction names, None if not present.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet._get_values">
-<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">_get_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet._get_values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet._get_values" title="Permalink to this definition"></a></dt>
-<dd><p>Determines which values to retrieve from an array.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>array</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)"><em>numpy.ndarray</em></a>) – The array with values.</p></li>
-<li><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <p>Can be one of the following:</p>
-<blockquote>
-<div><ul>
-<li><p>”average”: returns the average of the array</p></li>
-<li><p>”minimum”: returns the minimum of the array</p></li>
-<li><p>”maximum”: returns the maximum of the array</p></li>
-</ul>
-</div></blockquote>
-<p>If not supplied or equal to None, simply returns the array.</p>
-</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>array</strong> – Numpy array with values depending on the argument provided.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
-</dd>
-</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.has_ef_subset">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_ef_subset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.has_ef_subset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.has_ef_subset" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> if the dataset contains a subset of the eigenfunctions.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.has_matrices">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_matrices</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.has_matrices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.has_matrices" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if matrices are present.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.has_eigenvectors">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_eigenvectors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.has_eigenvectors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.has_eigenvectors" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if eigenvectors are present.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.has_residuals">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_residuals</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.has_residuals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.has_residuals" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if residuals are present.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_sound_speed">
-<span class="sig-name descname"><span class="pre">get_sound_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_sound_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_sound_speed" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_sound_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_sound_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_sound_speed" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the sound speed based on the equilibrium arrays,
 given by <span class="math notranslate nohighlight">\(c_s = \sqrt{\frac{\gamma p_0}{\rho_0}}\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Can be one of the following:</dt><dd><ul class="simple">
-<li><p>None : returns the sound speed as a function of the grid.</p></li>
-<li><p>”average”: returns the average sound speed over the grid.</p></li>
-<li><p>”minimum”: returns the minimum sound speed over the grid.</p></li>
-<li><p>”maximum”: returns the maximum sound speed over the grid.</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>cs</strong> – Array with the sound speed at every grid point, or a float corresponding
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array with the sound speed at every grid point, or a float corresponding
 to the value of <cite>which_values</cite> if provided.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a> or <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_alfven_speed">
-<span class="sig-name descname"><span class="pre">get_alfven_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_alfven_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_alfven_speed" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_alfven_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_alfven_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_alfven_speed" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the Alfvén speed based on the equilibrium arrays,
 given by <span class="math notranslate nohighlight">\(c_A = \sqrt{\frac{B_0^2}{\rho_0}}\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Can be one of the following:</dt><dd><ul class="simple">
-<li><p>None : returns the Alfvén speed as a function of the grid.</p></li>
-<li><p>”average”: returns the average Alfvén speed over the grid.</p></li>
-<li><p>”minimum”: returns the minimum Alfvén speed over the grid.</p></li>
-<li><p>”maximum”: returns the maximum Alfvén speed over the grid.</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>cA</strong> – Array with the Alfvén speed at every grid point,
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array with the Alfvén speed at every grid point,
 or a float corresponding to the value of <cite>which_values</cite> if provided.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a> or <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_tube_speed">
-<span class="sig-name descname"><span class="pre">get_tube_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_tube_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_tube_speed" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_tube_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_tube_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_tube_speed" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the tube speed for a cylinder, given by
 <span class="math notranslate nohighlight">\(c_t = \frac{c_s c_A}{\sqrt{c_s^2 + c_A^2}}\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Can be one of the following:</dt><dd><ul class="simple">
-<li><p>None : returns the tube speed as a function of the grid.</p></li>
-<li><p>”average”: returns the average tube speed over the grid.</p></li>
-<li><p>”minimum”: returns the minimum tube speed over the grid.</p></li>
-<li><p>”maximum”: returns the maximum tube speed over the grid.</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Array with the tube speed at every grid point,
 or a float corresponding to the value of <cite>which_values</cite> if provided.
 Returns <cite>None</cite> if the geometry is not cylindrical.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>ct = float, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a> or <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_reynolds_nb">
-<span class="sig-name descname"><span class="pre">get_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_reynolds_nb" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_reynolds_nb" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the Reynolds number, defined as
 <span class="math notranslate nohighlight">\(R_e = \frac{ac_s}{\eta}\)</span> where the slabsize is given by
 <span class="math notranslate nohighlight">\(a = x_{end} - x_{start}\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Can be one of the following:</dt><dd><ul class="simple">
-<li><p>None : returns the Reynolds number as a function of the grid.</p></li>
-<li><p>”average”: returns the average Reynolds number over the grid.</p></li>
-<li><p>”minimum”: returns the minimum Reynolds number over the grid.</p></li>
-<li><p>”maximum”: returns the maximum Reynolds number the grid</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>Re</strong> – Array with the Reynolds number at every grid point,
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array with the Reynolds number at every grid point,
 or a float corresponding to the value of <cite>which_values</cite> if provided.
 Returns <cite>None</cite> if the resistivity is zero somewhere on the domain.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a> or <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_magnetic_reynolds_nb">
-<span class="sig-name descname"><span class="pre">get_magnetic_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_magnetic_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_magnetic_reynolds_nb" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_magnetic_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_magnetic_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_magnetic_reynolds_nb" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the magnetic Reynolds number, defined as
 <span class="math notranslate nohighlight">\(R_m = \frac{ac_A}{\eta}\)</span> where the slabsize is given by
 <span class="math notranslate nohighlight">\(a = x_{end} - x_{start}\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Can be one of the following:</dt><dd><ul class="simple">
-<li><p>None : returns the magnetic Reynolds number as a function of the grid.</p></li>
-<li><p>”average”: returns the average magnetic Reynolds number over the grid.</p></li>
-<li><p>”minimum”: returns the minimum magnetic Reynolds number over the grid.</p></li>
-<li><p>”maximum”: returns the maximum magnetic Reynolds number over the grid</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>Rm</strong> – Array with the magnetic Reynolds number at every grid point,
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array with the magnetic Reynolds number at every grid point,
 or a float corresponding to the value of <cite>which_values</cite> if provided.
 Returns <cite>None</cite> if the resistivity is zero somewhere on the domain.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a>(dtype=float, ndim=1)</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a> or <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_k0_squared">
-<span class="sig-name descname"><span class="pre">get_k0_squared</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_k0_squared"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_k0_squared" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_k0_squared</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_k0_squared"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_k0_squared" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the squared wave number, defined as
 <span class="math notranslate nohighlight">\(k_0^2 = k_2^2 + k_3^2\)</span>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>k0_sq</strong> – The wave number squared.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_matrix_B">
-<span class="sig-name descname"><span class="pre">get_matrix_B</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_matrix_B"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_matrix_B" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_matrix_B</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_matrix_B"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_matrix_B" title="Permalink to this definition"></a></dt>
 <dd><p>Retrieves the matrix B from the datfile.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>Tuple containing the rows, columns and values of the non-zero B-matrix
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Tuple(rows</strong> – Tuple containing the rows, columns and values of the non-zero B-matrix
 elements. Rows and columns are integers, values are real.</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>3-tuple of numpy.ndarray(dtype=int, ndim=1)</p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a>, cols: numpy.ndarray, vals: numpy.ndarray)</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="../exceptions/index.html#pylbo.exceptions.MatricesNotPresent" title="pylbo.exceptions.MatricesNotPresent"><strong>MatricesNotPresent</strong></a> – If the matrices were not saved to the datfile.</p>
 </dd>
 </dl>
@@ -728,92 +673,196 @@ elements. Rows and columns are integers, values are real.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_matrix_A">
-<span class="sig-name descname"><span class="pre">get_matrix_A</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_matrix_A"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_matrix_A" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_matrix_A</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_matrix_A"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_matrix_A" title="Permalink to this definition"></a></dt>
 <dd><p>Retrieves the matrix A from the datfile.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>Tuple containing the rows, columns and values of the non-zero A-matrix
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Tuple(rows</strong> – Tuple containing the rows, columns and values of the non-zero A-matrix
 elements. Rows and columns are integers, values are complex.</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>3-tuple of numpy.ndarray(dtype=int, ndim=1)</p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a>, cols: numpy.ndarray, vals: numpy.ndarray)</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="../exceptions/index.html#pylbo.exceptions.MatricesNotPresent" title="pylbo.exceptions.MatricesNotPresent"><strong>MatricesNotPresent</strong></a> – If the matrices were not saved to the datfile.</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_eigenvectors">
+<span class="sig-name descname"><span class="pre">get_eigenvectors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_eigenvectors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_eigenvectors" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieves the eigenvectors from the datfile.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array containing the eigenvectors. One eigenvector
+in each column.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="../exceptions/index.html#pylbo.exceptions.EigenvectorsNotPresent" title="pylbo.exceptions.EigenvectorsNotPresent"><strong>EigenvectorsNotPresent</strong></a> – If the eigenvectors were not saved to the datfile.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_residuals">
+<span class="sig-name descname"><span class="pre">get_residuals</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_residuals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_residuals" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieves the residuals from the datfile.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array containing the residuals.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="../exceptions/index.html#pylbo.exceptions.ResidualsNotPresent" title="pylbo.exceptions.ResidualsNotPresent"><strong>ResidualsNotPresent</strong></a> – If the residuals were not saved to the datfile.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet._get_eigenfunction_like">
+<span class="sig-name descname"><span class="pre">_get_eigenfunction_like</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ev_guesses</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_idxs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">getter_func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet._get_eigenfunction_like"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet._get_eigenfunction_like" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the eigenfunctions based on the supplied getter function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ev_guesses</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a><em>, </em><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Eigenvalue guesses.</p></li>
+<li><p><strong>ev_idxs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Indices of the eigenvalues to retrieve.</p></li>
+<li><p><strong>getter_func</strong> (<em>function</em>) – Function to retrieve the eigenfunctions.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array containing the eigenfunctions, items are dictionaries.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_eigenfunctions">
-<span class="sig-name descname"><span class="pre">get_eigenfunctions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_guesses</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_idxs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_eigenfunctions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_eigenfunctions" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_eigenfunctions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ev_guesses</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_idxs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_eigenfunctions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_eigenfunctions" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the eigenfunctions based on given eigenvalue guesses or their
 indices. An array will be returned where every item is a dictionary, containing
 both the eigenvalue and its eigenfunctions. Either eigenvalue guesses or
 indices can be supplied, but not both.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>ev_guesses</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)"><em>complex</em></a>) – Eigenvalue guesses.</p></li>
-<li><p><strong>ev_idxs</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Indices corresponding to the eigenvalues that need to be retrieved.</p></li>
+<li><p><strong>ev_guesses</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a><em>, </em><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Eigenvalue guesses.</p></li>
+<li><p><strong>ev_idxs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Indices corresponding to the eigenvalues that need to be retrieved.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>eigenfuncs</strong> – Array containing the eigenfunctions and eigenvalues corresponding to the
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array containing the eigenfunctions and eigenvalues corresponding to the
 supplied indices. Every index in this array contains a dictionary with the
 eigenfunctions and corresponding eigenvalue.
 The keys of each dictionary are the eigenfunction names.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a>(dtype=dict, ndim=1)</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_derived_eigenfunctions">
-<span class="sig-name descname"><span class="pre">get_derived_eigenfunctions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_guesses</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_idxs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_derived_eigenfunctions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_derived_eigenfunctions" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_derived_eigenfunctions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ev_guesses</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_idxs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_derived_eigenfunctions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_derived_eigenfunctions" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the derived eigenfunctions based on given eigenvalue guesses or their
 indices. An array will be returned where every item is a dictionary, containing
 both the eigenvalue and its quantities. Either eigenvalue guesses or
 indices can be supplied, but not both.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>ev_guesses</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)"><em>complex</em></a>) – Eigenvalue guesses.</p></li>
-<li><p><strong>ev_idxs</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Indices corresponding to the eigenvalues that need to be retrieved.</p></li>
+<li><p><strong>ev_guesses</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a><em>, </em><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Eigenvalue guesses.</p></li>
+<li><p><strong>ev_idxs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Indices corresponding to the eigenvalues that need to be retrieved.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Array containing the derived eigenfunctions and eigenvalues
 corresponding to the supplied indices. Every index in this array
 contains a dictionary with the derived eigenfunctions and
 corresponding eigenvalue. The keys of each dictionary are the
 corresponding eigenfunction names.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a>(dtype=dict, ndim=1)</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_nearest_eigenvalues">
-<span class="sig-name descname"><span class="pre">get_nearest_eigenvalues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_guesses</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_nearest_eigenvalues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_nearest_eigenvalues" title="Permalink to this definition"></a></dt>
-<dd><p>Calculates the eigenvalues nearest to a given guess. This calculates
-the nearest eigenvalue based on the distance between two points.</p>
+<span class="sig-name descname"><span class="pre">get_nearest_eigenvalues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ev_guesses</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_nearest_eigenvalues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_nearest_eigenvalues" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the eigenvalues nearest to a given guess based on
+the distance between two points.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>ev_guesses</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)"><em>complex</em></a><em>, </em><em>list of float</em><em>, </em><em>list of complex</em>) – The guesses for the eigenvalues. These can be a single float/complex value,
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ev_guesses</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em> of </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em> of </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a>) – The guesses for the eigenvalues. These can be a single float/complex value,
 or a list/Numpy array of floats/complex values.</p>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><ul class="simple">
-<li><p><strong>idxs</strong> (<em>numpy.ndarray(dtype=int, ndim=1)</em>) – The indices of the nearest eigenvalues in the <a class="reference internal" href="#pylbo.data_containers.LegolasDataSet.eigenvalues" title="pylbo.data_containers.LegolasDataSet.eigenvalues"><code class="xref py py-attr docutils literal notranslate"><span class="pre">eigenvalues</span></code></a> array.</p></li>
-<li><p><strong>eigenvalues</strong> (<em>numpy.ndarray(dtype=complex, ndim=1)</em>) – The nearest eigenvalues to the provided guesses, corresponding with the
-indices <cite>idxs</cite>.</p></li>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The indices of the nearest eigenvalues in the <a class="reference internal" href="#pylbo.data_containers.LegolasDataSet.eigenvalues" title="pylbo.data_containers.LegolasDataSet.eigenvalues"><code class="xref py py-attr docutils literal notranslate"><span class="pre">eigenvalues</span></code></a> array.
+The nearest eigenvalues to the provided guesses, corresponding with the
+indices <cite>idxs</cite>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple(<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_eigenvalues_at_distance">
+<span class="sig-name descname"><span class="pre">get_eigenvalues_at_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ev_guesses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_distance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_eigenvalues_at_distance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_eigenvalues_at_distance" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the nearest eigenvalues nearest to a given guess
+but at a minimum distance away.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ev_guesses</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em> of </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em> of </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a>) – The guesses for the eigenvalues. These can be a single float/complex value,
+or a list/Numpy array of floats/complex values.</p></li>
+<li><p><strong>min_distance</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Minimum distance from the guess the eigenvalue should have.</p></li>
 </ul>
-</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The indices of the nearest eigenvalues at the minimum distance
+in the <a class="reference internal" href="#pylbo.data_containers.LegolasDataSet.eigenvalues" title="pylbo.data_containers.LegolasDataSet.eigenvalues"><code class="xref py py-attr docutils literal notranslate"><span class="pre">eigenvalues</span></code></a> array.
+The nearest eigenvalues at a minimum distance to the provided guesses,
+corresponding with the indices <cite>idxs</cite>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple(<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSet.get_omega_max">
+<span class="sig-name descname"><span class="pre">get_omega_max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">real</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">range_omega</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.0,</span> <span class="pre">1e+24)</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSet.get_omega_max"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSet.get_omega_max" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the maximum of the real or imaginary part of a spectrum.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>real</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Returns the largest real part if True (default option),
+returns the largest imaginary part if False.</p></li>
+<li><p><strong>strip</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Look for maximum in a horizontal half-plane if True. Default False.</p></li>
+<li><p><strong>range_omega</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em> of </em><em>floats</em>) – The horizontal range of the strip if strip=True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>omega_max</strong> – The eigenvalue that has the largest real or imaginary part in
+the chosen strip. Default: in the whole complex plane.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)">complex</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -822,250 +871,212 @@ indices <cite>idxs</cite>.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pylbo.data_containers.</span></span><span class="sig-name descname"><span class="pre">LegolasDataSeries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datfiles</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pylbo.data_containers.</span></span><span class="sig-name descname"><span class="pre">LegolasDataSeries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datfiles</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pylbo.data_containers.LegolasDataContainer" title="pylbo.data_containers.LegolasDataContainer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LegolasDataContainer</span></code></a></p>
 <p>Baseclass for a Legolas data container.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.efs_written">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">efs_written</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.efs_written"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.efs_written" title="Permalink to this definition"></a></dt>
-<dd><p>Checks if the eigenfunctions are written.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>efs_written</strong> – An array of bools corresponding to the various datasets, <cite>True</cite> if a
-dataset has eigenfunctions present.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
-</dd>
-</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.continua">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">continua</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.continua"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.continua" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the continua. Each key corresponds to a multiple Numpy arrays,
+one for each dataset.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.parameters">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the parameters. Each key corresponds to multiple Numpy arrays,
+one for each dataset.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.has_background">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_background</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.has_background"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.has_background" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> if background is present.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.has_efs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_efs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.has_efs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.has_efs" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> if eigenfunctions are present.</p>
+</dd></dl>
+
+<dl class="py property">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.ef_names">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">ef_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.ef_names" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ef_names</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.ef_names" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the eigenfunction names.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>ef_names</strong> – An array with the eigenfunction names as strings.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
-</dd>
-</dl>
 </dd></dl>
 
-<dl class="py method">
+<dl class="py property">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.ef_grid">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">ef_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.ef_grid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.ef_grid" title="Permalink to this definition"></a></dt>
-<dd><p>Retrieves the eigenfunction grid.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>ef_grid</strong> – An array with arrays, containing the eigenfunction grids for each dataset.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
-</dd>
-</dl>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ef_grid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.ef_grid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.ef_grid" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the eigenfunction grid.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.derived_efs_written">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">derived_efs_written</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.derived_efs_written"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.derived_efs_written" title="Permalink to this definition"></a></dt>
-<dd><p>Checks if the derived eigenfunctions are written.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>An array of bools corresponding to the various datasets, <cite>True</cite> if a
-dataset has derived eigenfunctions present.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a>(dtype=bool)</p>
-</dd>
-</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.has_derived_efs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_derived_efs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.has_derived_efs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.has_derived_efs" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> at index <cite>i</cite> if eigenfunctions are present in dataset <cite>i</cite>.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="py property">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.derived_ef_names">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">derived_ef_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.derived_ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.derived_ef_names" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">derived_ef_names</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.derived_ef_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.derived_ef_names" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the derived eigenfunction names.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>An array with the derived eigenfunction names as strings.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a>(dtype=str)</p>
-</dd>
-</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.has_ef_subset">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_ef_subset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.has_ef_subset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.has_ef_subset" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> at index <cite>i</cite> if the <cite>i</cite>-th dataset contains a subset.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.has_matrices">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_matrices</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.has_matrices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.has_matrices" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> at index <cite>i</cite> if the <cite>i</cite>-th dataset contains matrices.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.has_eigenvectors">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_eigenvectors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.has_eigenvectors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.has_eigenvectors" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> at index <cite>i</cite> if the <cite>i</cite>-th dataset contains eigenvectorst.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.has_residuals">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_residuals</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></em><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.has_residuals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.has_residuals" title="Permalink to this definition"></a></dt>
+<dd><p>Returns <cite>True</cite> at index <cite>i</cite> if the <cite>i</cite>-th dataset contains residuals.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.get_sound_speed">
-<span class="sig-name descname"><span class="pre">get_sound_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_sound_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_sound_speed" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_sound_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_sound_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_sound_speed" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the sound speed for the various datasets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Which values to return, can be one of the following:</dt><dd><ul class="simple">
-<li><p>None: every element of the return array will be an array in itself.</p></li>
-<li><p>”average”: every element of the return array is a float, equal to
-the average sound speed for that dataset.</p></li>
-<li><p>”minimum”: every element of the return array is a float, equal to
-the minimum sound speed for that dataset.</p></li>
-<li><p>”maximum”: every element of the return array is a float, equal to
-the minimum sound speed for that dataset.</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>cs</strong> – A Numpy array of same length as the number of datasets, containing the
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Numpy array of same length as the number of datasets, containing the
 sound speeds. Elements are either arrays themselves or floats, depending
 on the value of <cite>which_values</cite>.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.get_alfven_speed">
-<span class="sig-name descname"><span class="pre">get_alfven_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_alfven_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_alfven_speed" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_alfven_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_alfven_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_alfven_speed" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the Alfvén speed for the various datasets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Which values to return, can be one of the following:</dt><dd><ul class="simple">
-<li><p>None: every element of the return array will be an array in itself.</p></li>
-<li><p>”average”: every element of the return array is a float, equal to
-the average Alfvén speed for that dataset.</p></li>
-<li><p>”minimum”: every element of the return array is a float, equal to
-the minimum Alfvén speed for that dataset.</p></li>
-<li><p>”maximum”: every element of the return array is a float, equal to
-the minimum Alfvén speed for that dataset.</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>cA</strong> – A Numpy array of same length as the number of datasets, containing the
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Numpy array of same length as the number of datasets, containing the
 Alfvén speeds. Elements are either arrays themselves or floats, depending
 on the value of <cite>which_values</cite>.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.get_tube_speed">
-<span class="sig-name descname"><span class="pre">get_tube_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_tube_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_tube_speed" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_tube_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_tube_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_tube_speed" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the tube speed for the various datasets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Which values to return, can be one of the following:</dt><dd><ul class="simple">
-<li><p>None: every element of the return array will be an array in itself.</p></li>
-<li><p>”average”: every element of the return array is a float, equal to
-the average tube speed for that dataset.</p></li>
-<li><p>”minimum”: every element of the return array is a float, equal to
-the minimum tube speed for that dataset.</p></li>
-<li><p>”maximum”: every element of the return array is a float, equal to
-the minimum tube speed for that dataset.</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>cA</strong> – A Numpy array of same length as the number of datasets, containing the
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Numpy array of same length as the number of datasets, containing the
 tube speeds. Elements are either arrays themselves or floats, depending
 on the value of <cite>which_values</cite>. Elements are None if the geometry is
 not cylindrical.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.get_reynolds_nb">
-<span class="sig-name descname"><span class="pre">get_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_reynolds_nb" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_reynolds_nb" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the Reynolds number for the various datasets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Which values to return, can be one of the following:</dt><dd><ul class="simple">
-<li><p>None: every element of the return array will be an array in itself.</p></li>
-<li><p>”average”: every element of the return array is a float, equal to
-the average Reynolds number for that dataset.</p></li>
-<li><p>”minimum”: every element of the return array is a float, equal to
-the minimum Reynolds number for that dataset.</p></li>
-<li><p>”maximum”: every element of the return array is a float, equal to
-the minimum Reynolds number for that dataset.</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>Re</strong> – A Numpy array of same length as the number of datasets, containing the
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Numpy array of same length as the number of datasets, containing the
 Reynolds number. Elements are either arrays themselves or floats, depending
 on the value of <cite>which_values</cite>.
 Elements are None if the resistivity is zero.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.get_magnetic_reynolds_nb">
-<span class="sig-name descname"><span class="pre">get_magnetic_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_magnetic_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_magnetic_reynolds_nb" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_magnetic_reynolds_nb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">which_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_magnetic_reynolds_nb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_magnetic_reynolds_nb" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the magnetic Reynolds number for the various datasets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <dl class="simple">
-<dt>Which values to return, can be one of the following:</dt><dd><ul class="simple">
-<li><p>None: every element of the return array will be an array in itself.</p></li>
-<li><p>”average”: every element of the return array is a float, equal to
-the average magnetic Reynolds number for that dataset.</p></li>
-<li><p>”minimum”: every element of the return array is a float, equal to
-the minimum magnetic Reynolds number for that dataset.</p></li>
-<li><p>”maximum”: every element of the return array is a float, equal to
-the minimum magnetic Reynolds number for that dataset.</p></li>
-</ul>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Callback to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_values()</span></code>, either “average”/”minimum”/”maximum”.</p>
 </dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>Re</strong> – A Numpy array of same length as the number of datasets, containing the
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Numpy array of same length as the number of datasets, containing the
 magnetic Reynolds number. Elements are either arrays themselves
 or floats, depending on the value of <cite>which_values</cite>.
 Elements are None if the resistivity is zero.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.get_k0_squared">
-<span class="sig-name descname"><span class="pre">get_k0_squared</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_k0_squared"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_k0_squared" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_k0_squared</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_k0_squared"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_k0_squared" title="Permalink to this definition"></a></dt>
 <dd><p>Calculates the squared wave number for the various datasets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>k0_sq</strong> – A Numpy array of same length as the number of datasets, containing the
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A Numpy array of same length as the number of datasets, containing the
 squared wavenumber for each.</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pylbo.data_containers.LegolasDataSeries.get_omega_max">
+<span class="sig-name descname"><span class="pre">get_omega_max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">real</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pylbo/data_containers.html#LegolasDataSeries.get_omega_max"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.data_containers.LegolasDataSeries.get_omega_max" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the maximum of the real or imaginary part of the spectrum for
+the various datasets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>real</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Returns the largest real part if True (default option),
+returns the largest imaginary part if False.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>omega_max</strong> – A Numpy array of same length as the number of datasets, containing tuples
+of the eigenvalue that has the largest real or imaginary part.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>

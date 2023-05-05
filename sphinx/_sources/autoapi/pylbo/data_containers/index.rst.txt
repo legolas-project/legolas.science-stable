@@ -3,12 +3,6 @@
 
 .. py:module:: pylbo.data_containers
 
-.. autoapi-nested-parse::
-
-   
-   ..
-       !! processed by numpydoc !!
-
 
 Module Contents
 ---------------
@@ -24,6 +18,61 @@ Classes
 
 
 
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   pylbo.data_containers.ensure_dataset
+   pylbo.data_containers.ensure_dataseries
+
+
+
+.. py:function:: ensure_dataset(data: any) -> None
+
+   
+   Ensures that the given data is a :class:`LegolasDataSet`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+.. py:function:: ensure_dataseries(data: any) -> None
+
+   
+   Ensures that the given data is a :class:`LegolasDataSeries`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
 
 .. py:class:: LegolasDataContainer
 
@@ -49,319 +98,77 @@ Classes
 
    ..
        !! processed by numpydoc !!
-   .. py:method:: continua(self)
-      :property:
-
-      
-      Retrieves the continua based on the type of subclass, returns a dictionary
-      with the names of the continua as keys.
-
-          - :class:`LegolasDataSet`: the values are single Numpy arrays.
-          - :class:`LegolasDataSeries`: every value is an array of Numpy arrays,
-            one for each dataset in the series.
-
-      :returns: **continua** -- Dictionary containing the continua values.
-      :rtype: dict
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: parameters(self)
-      :property:
-
-      
-      Retrieves the parameters based on the type of subclass, returns a dictionary
-      with the parameter names as keys.
-
-          - :class:`LegolasDataSet`: values are single items.
-          - :class:`LegolasDataSeries`: values are Numpy arrays.
-
-      :returns: **parameters** -- Dictionary containing the parameters.
-      :rtype: dict
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: efs_written(self)
+   .. py:method:: continua()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: ef_grid(self)
+   .. py:method:: parameters()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: ef_names(self)
+   .. py:method:: has_efs()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: derived_efs_written(self)
+   .. py:method:: ef_grid()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: derived_ef_names(self)
+   .. py:method:: ef_names()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: get_sound_speed(self, which_values=None)
+   .. py:method:: has_background()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: get_alfven_speed(self, which_values=None)
+   .. py:method:: has_derived_efs()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: get_tube_speed(self, which_values=None)
+   .. py:method:: derived_ef_names()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: get_reynolds_nb(self, which_values=None)
+   .. py:method:: has_ef_subset()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: get_magnetic_reynolds_nb(self, which_values=None)
+   .. py:method:: has_matrices()
       :abstractmethod:
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: get_k0_squared(self)
+   .. py:method:: has_eigenvectors()
       :abstractmethod:
 
-      
+
+   .. py:method:: has_residuals()
+      :abstractmethod:
 
 
+   .. py:method:: get_sound_speed(which_values=None)
+      :abstractmethod:
 
 
+   .. py:method:: get_alfven_speed(which_values=None)
+      :abstractmethod:
 
 
+   .. py:method:: get_tube_speed(which_values=None)
+      :abstractmethod:
 
 
+   .. py:method:: get_reynolds_nb(which_values=None)
+      :abstractmethod:
 
 
+   .. py:method:: get_magnetic_reynolds_nb(which_values=None)
+      :abstractmethod:
 
 
+   .. py:method:: get_k0_squared()
+      :abstractmethod:
 
-
-
-
-      ..
-          !! processed by numpydoc !!
 
 
 .. py:class:: LegolasDataSet(datfile)
@@ -482,12 +289,6 @@ Classes
 
       :type: numpy.ndarray
 
-   .. attribute:: legolas_version
-
-      The current Legolas version.
-
-      :type: ~pylbo._version.VersionHandler
-
 
 
 
@@ -504,14 +305,16 @@ Classes
 
    ..
        !! processed by numpydoc !!
-   .. py:method:: efs_written(self)
-      :property:
+   .. py:property:: legolas_version
+      :type: pylbo._version.VersionHandler
+
+
+   .. py:property:: k2_str
+      :type: str
 
       
-      Checks if eigenfunctions are present.
+      Returns the :math:`k_2` string.
 
-      :returns: **efs_written** -- If `True`, eigenfunctions are present in the datfile.
-      :rtype: bool
 
 
 
@@ -530,15 +333,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: ef_names(self)
-      :property:
+   .. py:property:: k3_str
+      :type: str
 
       
-      Retrieves the eigenfunction names.
+      Returns the :math:`k_3` string.
 
-      :returns: **ef_names** -- Array containing the names of the eigenfunctions as strings.
-                None if no eigenfunctions are present.
-      :rtype: numpy.ndarray
 
 
 
@@ -557,14 +357,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: ef_grid(self)
-      :property:
+   .. py:property:: u1_str
+      :type: str
 
       
-      Retrieves the eigenfunction grid.
+      Returns the :math:`u_1` string.
 
-      :returns: **ef_grid** -- The eigenfunction grid. Returns None if eigenfunctions are not present.
-      :rtype: numpy.ndarray
 
 
 
@@ -583,14 +381,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: ef_subset(self)
-      :property:
+   .. py:property:: u2_str
+      :type: str
 
       
-      Checks if dataset contains a subset of the eigenfunctions
+      Returns the :math:`u_2` string.
 
-      :returns: `True` if subset present, `False` otherwise
-      :rtype: bool
 
 
 
@@ -609,14 +405,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: derived_efs_written(self)
-      :property:
+   .. py:property:: u3_str
+      :type: str
 
       
-      Checks if derived eigenfunctions are present.
+      Returns the :math:`u_3` string.
 
-      :returns: If `True`, derived eigenfunctions are present in the datfile.
-      :rtype: bool
 
 
 
@@ -635,15 +429,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: derived_ef_names(self)
-      :property:
+   .. py:property:: continua
+      :type: dict
 
       
-      Retrieves the derived eigenfunction names.
+      Returns the continua in a dict with the continua names as keys.
 
-      :returns: Array containing the names of the derived eigenfunctions as strings.
-                None if no derived eigenfunctions are present.
-      :rtype: numpy.ndarray
 
 
 
@@ -662,26 +453,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: _get_values(array, which_values)
-      :staticmethod:
+   .. py:property:: parameters
+      :type: dict
 
       
-      Determines which values to retrieve from an array.
+      Returns the parameters in a dict with the parameter names as keys
 
-      :param array: The array with values.
-      :type array: numpy.ndarray
-      :param which_values:
-                           Can be one of the following:
-
-                               - "average": returns the average of the array
-                               - "minimum": returns the minimum of the array
-                               - "maximum": returns the maximum of the array
-
-                           If not supplied or equal to None, simply returns the array.
-      :type which_values: str
-
-      :returns: **array** -- Numpy array with values depending on the argument provided.
-      :rtype: numpy.ndarray
 
 
 
@@ -700,23 +477,258 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_sound_speed(self, which_values=None)
+   .. py:property:: has_background
+      :type: bool
+
+      
+      Returns `True` if background is present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_efs
+      :type: bool
+
+      
+      Returns `True` if eigenfunctions are present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: ef_grid
+      :type: numpy.ndarray
+
+      
+      Returns the eigenfunction grid, None if eigenfunctions are not present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: ef_names
+      :type: numpy.ndarray
+
+      
+      Retrieves the eigenfunction names, None if eigenfunctions are not present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_derived_efs
+      :type: bool
+
+      
+      Returns `True` if derived eigenfunctions are present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: derived_ef_names
+      :type: numpy.ndarray
+
+      
+      Retrieves the derived eigenfunction names, None if not present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_ef_subset
+      :type: bool
+
+      
+      Returns `True` if the dataset contains a subset of the eigenfunctions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_matrices
+      :type: bool
+
+      
+      Checks if matrices are present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_eigenvectors
+      :type: bool
+
+      
+      Checks if eigenvectors are present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_residuals
+      :type: bool
+
+      
+      Checks if residuals are present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: get_sound_speed(which_values=None) -> Union[float, numpy.ndarray]
 
       
       Calculates the sound speed based on the equilibrium arrays,
       given by :math:`c_s = \sqrt{\frac{\gamma p_0}{\rho_0}}`.
 
-      :param which_values:
-                           Can be one of the following:
-                               - None : returns the sound speed as a function of the grid.
-                               - "average": returns the average sound speed over the grid.
-                               - "minimum": returns the minimum sound speed over the grid.
-                               - "maximum": returns the maximum sound speed over the grid.
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **cs** -- Array with the sound speed at every grid point, or a float corresponding
+      :returns: Array with the sound speed at every grid point, or a float corresponding
                 to the value of `which_values` if provided.
-      :rtype: float, numpy.ndarray
+      :rtype: float or numpy.ndarray
 
 
 
@@ -735,23 +747,18 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_alfven_speed(self, which_values=None)
+   .. py:method:: get_alfven_speed(which_values=None) -> Union[float, numpy.ndarray]
 
       
       Calculates the Alfvén speed based on the equilibrium arrays,
       given by :math:`c_A = \sqrt{\frac{B_0^2}{\rho_0}}`.
 
-      :param which_values:
-                           Can be one of the following:
-                               - None : returns the Alfvén speed as a function of the grid.
-                               - "average": returns the average Alfvén speed over the grid.
-                               - "minimum": returns the minimum Alfvén speed over the grid.
-                               - "maximum": returns the maximum Alfvén speed over the grid.
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **cA** -- Array with the Alfvén speed at every grid point,
+      :returns: Array with the Alfvén speed at every grid point,
                 or a float corresponding to the value of `which_values` if provided.
-      :rtype: float, numpy.ndarray
+      :rtype: float or numpy.ndarray
 
 
 
@@ -770,24 +777,19 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_tube_speed(self, which_values=None)
+   .. py:method:: get_tube_speed(which_values=None) -> Union[float, numpy.ndarray]
 
       
       Calculates the tube speed for a cylinder, given by
       :math:`c_t = \frac{c_s c_A}{\sqrt{c_s^2 + c_A^2}}`.
 
-      :param which_values:
-                           Can be one of the following:
-                               - None : returns the tube speed as a function of the grid.
-                               - "average": returns the average tube speed over the grid.
-                               - "minimum": returns the minimum tube speed over the grid.
-                               - "maximum": returns the maximum tube speed over the grid.
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
       :returns: Array with the tube speed at every grid point,
                 or a float corresponding to the value of `which_values` if provided.
                 Returns `None` if the geometry is not cylindrical.
-      :rtype: ct = float, numpy.ndarray
+      :rtype: float or numpy.ndarray
 
 
 
@@ -806,25 +808,20 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_reynolds_nb(self, which_values=None)
+   .. py:method:: get_reynolds_nb(which_values=None) -> Union[float, numpy.ndarray]
 
       
       Calculates the Reynolds number, defined as
       :math:`R_e = \frac{ac_s}{\eta}` where the slabsize is given by
       :math:`a = x_{end} - x_{start}`.
 
-      :param which_values:
-                           Can be one of the following:
-                              - None : returns the Reynolds number as a function of the grid.
-                              - "average": returns the average Reynolds number over the grid.
-                              - "minimum": returns the minimum Reynolds number over the grid.
-                              - "maximum": returns the maximum Reynolds number the grid
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **Re** -- Array with the Reynolds number at every grid point,
+      :returns: Array with the Reynolds number at every grid point,
                 or a float corresponding to the value of `which_values` if provided.
                 Returns `None` if the resistivity is zero somewhere on the domain.
-      :rtype: float, numpy.ndarray
+      :rtype: float or numpy.ndarray
 
 
 
@@ -843,25 +840,20 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_magnetic_reynolds_nb(self, which_values=None)
+   .. py:method:: get_magnetic_reynolds_nb(which_values=None) -> Union[float, numpy.ndarray]
 
       
       Calculates the magnetic Reynolds number, defined as
       :math:`R_m = \frac{ac_A}{\eta}` where the slabsize is given by
       :math:`a = x_{end} - x_{start}`.
 
-      :param which_values:
-                           Can be one of the following:
-                               - None : returns the magnetic Reynolds number as a function of the grid.
-                               - "average": returns the average magnetic Reynolds number over the grid.
-                               - "minimum": returns the minimum magnetic Reynolds number over the grid.
-                               - "maximum": returns the maximum magnetic Reynolds number over the grid
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **Rm** -- Array with the magnetic Reynolds number at every grid point,
+      :returns: Array with the magnetic Reynolds number at every grid point,
                 or a float corresponding to the value of `which_values` if provided.
                 Returns `None` if the resistivity is zero somewhere on the domain.
-      :rtype: float, numpy.ndarray(dtype=float, ndim=1)
+      :rtype: float or numpy.ndarray
 
 
 
@@ -880,14 +872,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_k0_squared(self)
+   .. py:method:: get_k0_squared() -> float
 
       
       Calculates the squared wave number, defined as
       :math:`k_0^2 = k_2^2 + k_3^2`.
 
-      :returns: **k0_sq** -- The wave number squared.
-      :rtype: float
 
 
 
@@ -906,14 +896,14 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_matrix_B(self)
+   .. py:method:: get_matrix_B() -> tuple[numpy.ndarray, numpy.ndarray, numpy.ndarray]
 
       
       Retrieves the matrix B from the datfile.
 
-      :returns: Tuple containing the rows, columns and values of the non-zero B-matrix
+      :returns: **Tuple(rows** -- Tuple containing the rows, columns and values of the non-zero B-matrix
                 elements. Rows and columns are integers, values are real.
-      :rtype: 3-tuple of numpy.ndarray(dtype=int, ndim=1)
+      :rtype: numpy.ndarray, cols: numpy.ndarray, vals: numpy.ndarray)
 
       :raises MatricesNotPresent: If the matrices were not saved to the datfile.
 
@@ -934,14 +924,14 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_matrix_A(self)
+   .. py:method:: get_matrix_A() -> tuple[numpy.ndarray, numpy.ndarray, numpy.ndarray]
 
       
       Retrieves the matrix A from the datfile.
 
-      :returns: Tuple containing the rows, columns and values of the non-zero A-matrix
+      :returns: **Tuple(rows** -- Tuple containing the rows, columns and values of the non-zero A-matrix
                 elements. Rows and columns are integers, values are complex.
-      :rtype: 3-tuple of numpy.ndarray(dtype=int, ndim=1)
+      :rtype: numpy.ndarray, cols: numpy.ndarray, vals: numpy.ndarray)
 
       :raises MatricesNotPresent: If the matrices were not saved to the datfile.
 
@@ -962,7 +952,94 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_eigenfunctions(self, ev_guesses=None, ev_idxs=None)
+   .. py:method:: get_eigenvectors() -> numpy.ndarray
+
+      
+      Retrieves the eigenvectors from the datfile.
+
+      :returns: Array containing the eigenvectors. One eigenvector
+                in each column.
+      :rtype: numpy.ndarray
+
+      :raises EigenvectorsNotPresent: If the eigenvectors were not saved to the datfile.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: get_residuals() -> numpy.ndarray
+
+      
+      Retrieves the residuals from the datfile.
+
+      :returns: Array containing the residuals.
+      :rtype: numpy.ndarray
+
+      :raises ResidualsNotPresent: If the residuals were not saved to the datfile.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: _get_eigenfunction_like(ev_guesses: numpy.ndarray, ev_idxs: numpy.ndarray, getter_func: Callable) -> numpy.ndarray
+
+      
+      Returns the eigenfunctions based on the supplied getter function.
+
+      :param ev_guesses: Eigenvalue guesses.
+      :type ev_guesses: complex, numpy.ndarray
+      :param ev_idxs: Indices of the eigenvalues to retrieve.
+      :type ev_idxs: int, numpy.ndarray
+      :param getter_func: Function to retrieve the eigenfunctions.
+      :type getter_func: function
+
+      :returns: Array containing the eigenfunctions, items are dictionaries.
+      :rtype: numpy.ndarray
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: get_eigenfunctions(ev_guesses=None, ev_idxs=None) -> numpy.ndarray
 
       
       Returns the eigenfunctions based on given eigenvalue guesses or their
@@ -971,15 +1048,15 @@ Classes
       indices can be supplied, but not both.
 
       :param ev_guesses: Eigenvalue guesses.
-      :type ev_guesses: (list of) int, float, complex
+      :type ev_guesses: complex, numpy.ndarray
       :param ev_idxs: Indices corresponding to the eigenvalues that need to be retrieved.
-      :type ev_idxs: (list of) int
+      :type ev_idxs: int, numpy.ndarray
 
-      :returns: **eigenfuncs** -- Array containing the eigenfunctions and eigenvalues corresponding to the
+      :returns: Array containing the eigenfunctions and eigenvalues corresponding to the
                 supplied indices. Every index in this array contains a dictionary with the
                 eigenfunctions and corresponding eigenvalue.
                 The keys of each dictionary are the eigenfunction names.
-      :rtype: numpy.ndarray(dtype=dict, ndim=1)
+      :rtype: numpy.ndarray
 
 
 
@@ -998,7 +1075,7 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_derived_eigenfunctions(self, ev_guesses=None, ev_idxs=None)
+   .. py:method:: get_derived_eigenfunctions(ev_guesses=None, ev_idxs=None) -> numpy.ndarray
 
       
       Returns the derived eigenfunctions based on given eigenvalue guesses or their
@@ -1007,16 +1084,16 @@ Classes
       indices can be supplied, but not both.
 
       :param ev_guesses: Eigenvalue guesses.
-      :type ev_guesses: (list of) int, float, complex
+      :type ev_guesses: complex, numpy.ndarray
       :param ev_idxs: Indices corresponding to the eigenvalues that need to be retrieved.
-      :type ev_idxs: (list of) int
+      :type ev_idxs: int, numpy.ndarray
 
       :returns: Array containing the derived eigenfunctions and eigenvalues
                 corresponding to the supplied indices. Every index in this array
                 contains a dictionary with the derived eigenfunctions and
                 corresponding eigenvalue. The keys of each dictionary are the
                 corresponding eigenfunction names.
-      :rtype: numpy.ndarray(dtype=dict, ndim=1)
+      :rtype: numpy.ndarray
 
 
 
@@ -1035,19 +1112,89 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_nearest_eigenvalues(self, ev_guesses)
+   .. py:method:: get_nearest_eigenvalues(ev_guesses) -> tuple(np.ndarray, np.ndarray)
 
       
-      Calculates the eigenvalues nearest to a given guess. This calculates
-      the nearest eigenvalue based on the distance between two points.
+      Calculates the eigenvalues nearest to a given guess based on
+      the distance between two points.
 
       :param ev_guesses: The guesses for the eigenvalues. These can be a single float/complex value,
                          or a list/Numpy array of floats/complex values.
       :type ev_guesses: float, complex, list of float, list of complex
 
-      :returns: * **idxs** (*numpy.ndarray(dtype=int, ndim=1)*) -- The indices of the nearest eigenvalues in the :attr:`eigenvalues` array.
-                * **eigenvalues** (*numpy.ndarray(dtype=complex, ndim=1)*) -- The nearest eigenvalues to the provided guesses, corresponding with the
-                  indices `idxs`.
+      :returns: The indices of the nearest eigenvalues in the :attr:`eigenvalues` array.
+                The nearest eigenvalues to the provided guesses, corresponding with the
+                indices `idxs`.
+      :rtype: Tuple(numpy.ndarray, numpy.ndarray)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: get_eigenvalues_at_distance(ev_guesses, min_distance=0.0) -> tuple(np.ndarray, np.ndarray)
+
+      
+      Calculates the nearest eigenvalues nearest to a given guess
+      but at a minimum distance away.
+
+      :param ev_guesses: The guesses for the eigenvalues. These can be a single float/complex value,
+                         or a list/Numpy array of floats/complex values.
+      :type ev_guesses: float, complex, list of float, list of complex
+      :param min_distance: Minimum distance from the guess the eigenvalue should have.
+      :type min_distance: float
+
+      :returns: The indices of the nearest eigenvalues at the minimum distance
+                in the :attr:`eigenvalues` array.
+                The nearest eigenvalues at a minimum distance to the provided guesses,
+                corresponding with the indices `idxs`.
+      :rtype: Tuple(numpy.ndarray, numpy.ndarray)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: get_omega_max(real=True, strip=False, range_omega=(0.0, 1e+24))
+
+      
+      Calculates the maximum of the real or imaginary part of a spectrum.
+
+      :param real: Returns the largest real part if True (default option),
+                   returns the largest imaginary part if False.
+      :type real: bool
+      :param strip: Look for maximum in a horizontal half-plane if True. Default False.
+      :type strip: bool
+      :param range_omega: The horizontal range of the strip if strip=True.
+      :type range_omega: tuple of floats
+
+      :returns: **omega_max** -- The eigenvalue that has the largest real or imaginary part in
+                the chosen strip. Default: in the whole complex plane.
+      :rtype: complex
 
 
 
@@ -1091,15 +1238,13 @@ Classes
 
    ..
        !! processed by numpydoc !!
-   .. py:method:: efs_written(self)
-      :property:
+   .. py:property:: continua
+      :type: dict
 
       
-      Checks if the eigenfunctions are written.
+      Returns the continua. Each key corresponds to a multiple Numpy arrays,
+      one for each dataset.
 
-      :returns: **efs_written** -- An array of bools corresponding to the various datasets, `True` if a
-                dataset has eigenfunctions present.
-      :rtype: numpy.ndarray
 
 
 
@@ -1118,14 +1263,85 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: ef_names(self)
-      :property:
+   .. py:property:: parameters
+      :type: dict
+
+      
+      Returns the parameters. Each key corresponds to multiple Numpy arrays,
+      one for each dataset.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_background
+      :type: numpy.ndarray
+
+      
+      Returns `True` if background is present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_efs
+      :type: numpy.ndarray
+
+      
+      Returns `True` if eigenfunctions are present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: ef_names
+      :type: numpy.ndarray
 
       
       Returns the eigenfunction names.
 
-      :returns: **ef_names** -- An array with the eigenfunction names as strings.
-      :rtype: numpy.ndarray
 
 
 
@@ -1144,14 +1360,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: ef_grid(self)
-      :property:
+   .. py:property:: ef_grid
+      :type: numpy.ndarray
 
       
-      Retrieves the eigenfunction grid.
+      Returns the eigenfunction grid.
 
-      :returns: **ef_grid** -- An array with arrays, containing the eigenfunction grids for each dataset.
-      :rtype: numpy.ndarray
 
 
 
@@ -1170,15 +1384,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: derived_efs_written(self)
-      :property:
+   .. py:property:: has_derived_efs
+      :type: numpy.ndarray
 
       
-      Checks if the derived eigenfunctions are written.
+      Returns `True` at index `i` if eigenfunctions are present in dataset `i`.
 
-      :returns: An array of bools corresponding to the various datasets, `True` if a
-                dataset has derived eigenfunctions present.
-      :rtype: numpy.ndarray(dtype=bool)
 
 
 
@@ -1197,14 +1408,12 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: derived_ef_names(self)
-      :property:
+   .. py:property:: derived_ef_names
+      :type: numpy.ndarray
 
       
       Returns the derived eigenfunction names.
 
-      :returns: An array with the derived eigenfunction names as strings.
-      :rtype: numpy.ndarray(dtype=str)
 
 
 
@@ -1223,23 +1432,111 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_sound_speed(self, which_values=None)
+   .. py:property:: has_ef_subset
+      :type: numpy.ndarray
+
+      
+      Returns `True` at index `i` if the `i`-th dataset contains a subset.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_matrices
+      :type: numpy.ndarray
+
+      
+      Returns `True` at index `i` if the `i`-th dataset contains matrices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_eigenvectors
+      :type: numpy.ndarray
+
+      
+      Returns `True` at index `i` if the `i`-th dataset contains eigenvectorst.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:property:: has_residuals
+      :type: numpy.ndarray
+
+      
+      Returns `True` at index `i` if the `i`-th dataset contains residuals.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: get_sound_speed(which_values=None) -> numpy.ndarray
 
       
       Calculates the sound speed for the various datasets.
 
-      :param which_values:
-                           Which values to return, can be one of the following:
-                               - None: every element of the return array will be an array in itself.
-                               - "average": every element of the return array is a float, equal to
-                                 the average sound speed for that dataset.
-                               - "minimum": every element of the return array is a float, equal to
-                                 the minimum sound speed for that dataset.
-                               - "maximum": every element of the return array is a float, equal to
-                                 the minimum sound speed for that dataset.
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **cs** -- A Numpy array of same length as the number of datasets, containing the
+      :returns: A Numpy array of same length as the number of datasets, containing the
                 sound speeds. Elements are either arrays themselves or floats, depending
                 on the value of `which_values`.
       :rtype: numpy.ndarray
@@ -1261,23 +1558,15 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_alfven_speed(self, which_values=None)
+   .. py:method:: get_alfven_speed(which_values=None) -> numpy.ndarray
 
       
       Calculates the Alfvén speed for the various datasets.
 
-      :param which_values:
-                           Which values to return, can be one of the following:
-                               - None: every element of the return array will be an array in itself.
-                               - "average": every element of the return array is a float, equal to
-                                 the average Alfvén speed for that dataset.
-                               - "minimum": every element of the return array is a float, equal to
-                                 the minimum Alfvén speed for that dataset.
-                               - "maximum": every element of the return array is a float, equal to
-                                 the minimum Alfvén speed for that dataset.
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **cA** -- A Numpy array of same length as the number of datasets, containing the
+      :returns: A Numpy array of same length as the number of datasets, containing the
                 Alfvén speeds. Elements are either arrays themselves or floats, depending
                 on the value of `which_values`.
       :rtype: numpy.ndarray
@@ -1299,23 +1588,15 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_tube_speed(self, which_values=None)
+   .. py:method:: get_tube_speed(which_values=None) -> numpy.ndarray
 
       
       Calculates the tube speed for the various datasets.
 
-      :param which_values:
-                           Which values to return, can be one of the following:
-                               - None: every element of the return array will be an array in itself.
-                               - "average": every element of the return array is a float, equal to
-                                 the average tube speed for that dataset.
-                               - "minimum": every element of the return array is a float, equal to
-                                 the minimum tube speed for that dataset.
-                               - "maximum": every element of the return array is a float, equal to
-                                 the minimum tube speed for that dataset.
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **cA** -- A Numpy array of same length as the number of datasets, containing the
+      :returns: A Numpy array of same length as the number of datasets, containing the
                 tube speeds. Elements are either arrays themselves or floats, depending
                 on the value of `which_values`. Elements are None if the geometry is
                 not cylindrical.
@@ -1338,23 +1619,15 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_reynolds_nb(self, which_values=None)
+   .. py:method:: get_reynolds_nb(which_values=None) -> numpy.ndarray
 
       
       Calculates the Reynolds number for the various datasets.
 
-      :param which_values:
-                           Which values to return, can be one of the following:
-                               - None: every element of the return array will be an array in itself.
-                               - "average": every element of the return array is a float, equal to
-                                 the average Reynolds number for that dataset.
-                               - "minimum": every element of the return array is a float, equal to
-                                 the minimum Reynolds number for that dataset.
-                               - "maximum": every element of the return array is a float, equal to
-                                 the minimum Reynolds number for that dataset.
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **Re** -- A Numpy array of same length as the number of datasets, containing the
+      :returns: A Numpy array of same length as the number of datasets, containing the
                 Reynolds number. Elements are either arrays themselves or floats, depending
                 on the value of `which_values`.
                 Elements are None if the resistivity is zero.
@@ -1377,23 +1650,15 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_magnetic_reynolds_nb(self, which_values=None)
+   .. py:method:: get_magnetic_reynolds_nb(which_values=None) -> numpy.ndarray
 
       
       Calculates the magnetic Reynolds number for the various datasets.
 
-      :param which_values:
-                           Which values to return, can be one of the following:
-                               - None: every element of the return array will be an array in itself.
-                               - "average": every element of the return array is a float, equal to
-                                 the average magnetic Reynolds number for that dataset.
-                               - "minimum": every element of the return array is a float, equal to
-                                 the minimum magnetic Reynolds number for that dataset.
-                               - "maximum": every element of the return array is a float, equal to
-                                 the minimum magnetic Reynolds number for that dataset.
+      :param which_values: Callback to :meth:`get_values`, either "average"/"minimum"/"maximum".
       :type which_values: str
 
-      :returns: **Re** -- A Numpy array of same length as the number of datasets, containing the
+      :returns: A Numpy array of same length as the number of datasets, containing the
                 magnetic Reynolds number. Elements are either arrays themselves
                 or floats, depending on the value of `which_values`.
                 Elements are None if the resistivity is zero.
@@ -1416,13 +1681,44 @@ Classes
       ..
           !! processed by numpydoc !!
 
-   .. py:method:: get_k0_squared(self)
+   .. py:method:: get_k0_squared() -> numpy.ndarray
 
       
       Calculates the squared wave number for the various datasets.
 
-      :returns: **k0_sq** -- A Numpy array of same length as the number of datasets, containing the
+      :returns: A Numpy array of same length as the number of datasets, containing the
                 squared wavenumber for each.
+      :rtype: numpy.ndarray
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: get_omega_max(real=True)
+
+      
+      Calculates the maximum of the real or imaginary part of the spectrum for
+      the various datasets.
+
+      :param real: Returns the largest real part if True (default option),
+                   returns the largest imaginary part if False.
+      :type real: bool
+
+      :returns: **omega_max** -- A Numpy array of same length as the number of datasets, containing tuples
+                of the eigenvalue that has the largest real or imaginary part.
       :rtype: numpy.ndarray
 
 

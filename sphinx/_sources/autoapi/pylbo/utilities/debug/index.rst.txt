@@ -3,12 +3,6 @@
 
 .. py:module:: pylbo.utilities.debug
 
-.. autoapi-nested-parse::
-
-   
-   ..
-       !! processed by numpydoc !!
-
 
 Module Contents
 ---------------
@@ -26,91 +20,28 @@ Functions
 
 
 
-.. py:function:: get_debug_coolingcurves(filename)
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   pylbo.utilities.debug.ALIGN
+
+
+.. py:data:: ALIGN
+   :value: '='
 
    
 
+.. py:function:: get_debug_coolingcurves(filename)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
 
 .. py:function:: get_debug_atmocurves(filename)
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
 
 .. py:function:: plot_debug_coolingcurves(filename)
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
 
 .. py:function:: plot_debug_atmocurves(filename)
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
 

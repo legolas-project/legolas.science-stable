@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pylbo.utilities.toolbox &mdash; Pylbo stable documentation</title>
@@ -12,10 +12,11 @@
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
@@ -29,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> Pylbo
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Pylbo
           </a>
               <div class="version">
-                1.1.3 - stable
+                2.0.0 - stable
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,7 +53,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../../automation/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.automation</span></code></a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities</span></code></a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../datfile_utils/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.datfile_utils</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../datfiles/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.datfiles</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../debug/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.debug</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../logger/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.logger</span></code></a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.toolbox</span></code></a></li>
@@ -58,7 +63,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../../_version/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo._version</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../data_containers/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.data_containers</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../exceptions/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.exceptions</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../file_handler/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.file_handler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../testing/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.testing</span></code></a></li>
 </ul>
 </li>
@@ -79,11 +83,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../index.html">API Reference</a> &raquo;</li>
-          <li><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a> &raquo;</li>
-          <li><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities</span></code></a> &raquo;</li>
-      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.toolbox</span></code></li>
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a></li>
+          <li class="breadcrumb-item"><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities</span></code></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.toolbox</span></code></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../../_sources/autoapi/pylbo/utilities/toolbox/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -94,16 +98,12 @@
            <div itemprop="articleBody">
              
   <section id="module-pylbo.utilities.toolbox">
-<span id="pylbo-utilities-toolbox"></span><h1><a class="reference internal" href="#module-pylbo.utilities.toolbox" title="pylbo.utilities.toolbox"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.toolbox</span></code></a><a class="headerlink" href="#module-pylbo.utilities.toolbox" title="Permalink to this headline"></a></h1>
+<span id="pylbo-utilities-toolbox"></span><h1><a class="reference internal" href="#module-pylbo.utilities.toolbox" title="pylbo.utilities.toolbox"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.toolbox</span></code></a><a class="headerlink" href="#module-pylbo.utilities.toolbox" title="Permalink to this heading"></a></h1>
 <section id="module-contents">
-<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline"></a></h2>
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this heading"></a></h2>
 <section id="functions">
-<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h3>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this heading"></a></h3>
+<table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.timethis" title="pylbo.utilities.toolbox.timethis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timethis</span></code></a>(func)</p></td>
 <td><p></p></td>
@@ -111,20 +111,29 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.get_axis_geometry" title="pylbo.utilities.toolbox.get_axis_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_axis_geometry</span></code></a>(ax)</p></td>
 <td><p>Retrieves the geometry of a given matplotlib axis.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.add_pickradius_to_item" title="pylbo.utilities.toolbox.add_pickradius_to_item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_pickradius_to_item</span></code></a>(item, pickradius)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.get_values" title="pylbo.utilities.toolbox.get_values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_values</span></code></a>(array, which_values)</p></td>
+<td><p>Determines which values to retrieve from an array.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.add_pickradius_to_item" title="pylbo.utilities.toolbox.add_pickradius_to_item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_pickradius_to_item</span></code></a>(item, pickradius)</p></td>
 <td><p>Makes a matplotlib artist pickable and adds a pickradius.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.custom_enumerate" title="pylbo.utilities.toolbox.custom_enumerate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">custom_enumerate</span></code></a>(iterable, start=0, step=1)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.custom_enumerate" title="pylbo.utilities.toolbox.custom_enumerate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">custom_enumerate</span></code></a>(iterable[, start, step])</p></td>
 <td><p>Does a custom enumeration with a given stepsize.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.transform_to_list" title="pylbo.utilities.toolbox.transform_to_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform_to_list</span></code></a>(obj: any) → list</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.transform_to_list" title="pylbo.utilities.toolbox.transform_to_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform_to_list</span></code></a>(→ list)</p></td>
 <td><p>Transforms a given input argument <cite>obj</cite> to a list. If <cite>obj</cite></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.transform_to_numpy" title="pylbo.utilities.toolbox.transform_to_numpy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform_to_numpy</span></code></a>(obj: any) → numpy.ndarray</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.transform_to_numpy" title="pylbo.utilities.toolbox.transform_to_numpy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform_to_numpy</span></code></a>(→ numpy.ndarray)</p></td>
 <td><p>Transforms a given input argument <cite>obj</cite> to a numpy array.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.solve_cubic_exact" title="pylbo.utilities.toolbox.solve_cubic_exact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">solve_cubic_exact</span></code></a>(a, b, c, d)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.solve_cubic_exact" title="pylbo.utilities.toolbox.solve_cubic_exact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">solve_cubic_exact</span></code></a>(a, b, c, d)</p></td>
 <td><p>Solves a given cubic polynomial of the form</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.count_zeroes" title="pylbo.utilities.toolbox.count_zeroes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">count_zeroes</span></code></a>(eigfuncs)</p></td>
+<td><p>Counts the number of zeroes of an array of complex eigenfunctions by looking at</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pylbo.utilities.toolbox.invert_continuum_array" title="pylbo.utilities.toolbox.invert_continuum_array"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invert_continuum_array</span></code></a>(cont, r_gauss, sigma)</p></td>
+<td><p>Finds the location of resonance for eigenmode solutions having a real part that</p></td>
 </tr>
 </tbody>
 </table>
@@ -138,14 +147,43 @@
 <span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">get_axis_geometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#get_axis_geometry"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.get_axis_geometry" title="Permalink to this definition"></a></dt>
 <dd><p>Retrieves the geometry of a given matplotlib axis.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>ax</strong> (<a class="reference external" href="https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes" title="(in Matplotlib v3.4.3)"><em>Axes</em></a>) – The axis to retrieve the geometry from.</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ax</strong> (<a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="(in Matplotlib v3.7.1)"><em>Axes</em></a>) – The axis to retrieve the geometry from.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The geometry of the given matplotlib axis.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)">tuple</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)">tuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pylbo.utilities.toolbox.get_values">
+<span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">get_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_values</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#get_values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.get_values" title="Permalink to this definition"></a></dt>
+<dd><p>Determines which values to retrieve from an array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>array</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – The array with values.</p></li>
+<li><p><strong>which_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – <p>Can be one of the following:</p>
+<blockquote>
+<div><ul>
+<li><p>”average”: returns the average of the array</p></li>
+<li><p>”minimum”: returns the minimum of the array</p></li>
+<li><p>”maximum”: returns the maximum of the array</p></li>
+</ul>
+</div></blockquote>
+<p>If not supplied or equal to None, simply returns the array.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>array</strong> – Numpy array with values depending on the argument provided.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -157,10 +195,10 @@
 We have to handle this separately, because for line2D items the method
 <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_picker()</span></code> is deprecated from version 3.3 onwards.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>item</strong> (<a class="reference external" href="https://matplotlib.org/api/artist_api.html#matplotlib.artist.Artist" title="(in Matplotlib v3.4.3)"><em>Artist</em></a>) – The artist which will be made pickable</p></li>
-<li><p><strong>pickradius</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – Sets the pickradius, which determines if something is “on” the picked point.</p></li>
+<li><p><strong>item</strong> (<a class="reference external" href="https://matplotlib.org/stable/api/artist_api.html#matplotlib.artist.Artist" title="(in Matplotlib v3.7.1)"><em>Artist</em></a>) – The artist which will be made pickable</p></li>
+<li><p><strong>pickradius</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Sets the pickradius, which determines if something is “on” the picked point.</p></li>
 </ul>
 </dd>
 </dl>
@@ -171,14 +209,14 @@ We have to handle this separately, because for line2D items the method
 <span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">custom_enumerate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#custom_enumerate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.custom_enumerate" title="Permalink to this definition"></a></dt>
 <dd><p>Does a custom enumeration with a given stepsize.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>iterable</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><em>Iterable</em></a>) – The iterable to iterate over.</p></li>
-<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The starting value for enumerate.</p></li>
-<li><p><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The stepsize between enumerate values.</p></li>
+<li><p><strong>iterable</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.11)"><em>Iterable</em></a>) – The iterable to iterate over.</p></li>
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The starting value for enumerate.</p></li>
+<li><p><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The stepsize between enumerate values.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Yields</dt>
+<dt class="field-even">Yields<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>start</strong> (<em>int</em>) – The current index in <cite>iterable</cite>, incremented with <cite>step</cite>.</p></li>
 <li><p><strong>itr</strong> (<em>~typing.Iterable</em>) – The corresponding entry of <cite>iterable</cite>.</p></li>
@@ -189,35 +227,35 @@ We have to handle this separately, because for line2D items the method
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pylbo.utilities.toolbox.transform_to_list">
-<span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">transform_to_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><span class="pre">list</span></a></span></span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#transform_to_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.transform_to_list" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">transform_to_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><span class="pre">list</span></a></span></span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#transform_to_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.transform_to_list" title="Permalink to this definition"></a></dt>
 <dd><p>Transforms a given input argument <cite>obj</cite> to a list. If <cite>obj</cite>
 is a Numpy-array or tuple, a cast to <cite>list()</cite> is invoked.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>obj</strong> (<em>any</em>) – The object to transform.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The object converted to a list.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pylbo.utilities.toolbox.transform_to_numpy">
-<span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">transform_to_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#transform_to_numpy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.transform_to_numpy" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">transform_to_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><span class="pre">numpy.ndarray</span></a></span></span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#transform_to_numpy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.transform_to_numpy" title="Permalink to this definition"></a></dt>
 <dd><p>Transforms a given input argument <cite>obj</cite> to a numpy array.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>obj</strong> (<em>any</em>) – The object to transform.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The object transformed to a numpy array.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21)">numpy.ndarray</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)">numpy.ndarray</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -230,19 +268,68 @@ is a Numpy-array or tuple, a cast to <cite>list()</cite> is invoked.</p>
 instead of the general <cite>numpy.roots</cite> routine.
 From <a class="reference external" href="https://math.stackexchange.com/questions15865why-not-write-the-solutions-of-a-cubic-this-way/18873#18873/">StackOverflow</a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>a</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)"><em>complex</em></a>) – Cubic coefficient.</p></li>
-<li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)"><em>complex</em></a>) – Quadratic coefficient.</p></li>
-<li><p><strong>c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)"><em>complex</em></a>) – Linear coefficient.</p></li>
-<li><p><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)"><em>complex</em></a>) – Constant term</p></li>
+<li><p><strong>a</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a>) – Cubic coefficient.</p></li>
+<li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a>) – Quadratic coefficient.</p></li>
+<li><p><strong>c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a>) – Linear coefficient.</p></li>
+<li><p><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a>) – Constant term</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>roots</strong> – The three roots of the cubic polynomial as a Numpy array.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>np.ndarray(ndim=3, dtype=complex)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pylbo.utilities.toolbox.count_zeroes">
+<span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">count_zeroes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eigfuncs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#count_zeroes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.count_zeroes" title="Permalink to this definition"></a></dt>
+<dd><p>Counts the number of zeroes of an array of complex eigenfunctions by looking at
+sign changes of the real and imaginary part of the eigenfunctions.
+Doesn’t include the grid endpoints in the count, since the boundary conditions are
+automatically satisfied. This only becomes accurate for eigenfunctions with enough
+oscillations and is resolution dependent. Therefore, we take the minimum
+of the number of zeroes of the real and imaginary part.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>eigfuncs</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Array of eigenfunction arrays of complex numbers.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>nzeroes</strong> – Counter array containing the number of zeroes of the real or imaginary part
+of each input eigenfunction array.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray(dtype=int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pylbo.utilities.toolbox.invert_continuum_array">
+<span class="sig-prename descclassname"><span class="pre">pylbo.utilities.toolbox.</span></span><span class="sig-name descname"><span class="pre">invert_continuum_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r_gauss</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/utilities/toolbox.html#invert_continuum_array"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.toolbox.invert_continuum_array" title="Permalink to this definition"></a></dt>
+<dd><p>Finds the location of resonance for eigenmode solutions having a real part that
+might overlap with a continuum range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cont</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Array containing the range of a specific continuum. Automatically has the same
+length as r_gauss, since it has the same shape as the equilibrium fields used
+to calculate the continua. Can be complex, but only the resonance with the real
+part is calculated.</p></li>
+<li><p><strong>r_gauss</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><em>numpy.ndarray</em></a>) – Array containing the grid on which equilibrium fields are defined.</p></li>
+<li><p><strong>sigma</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a>) – An eigenvalue solution of the generalized eigenvalue problem.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>r_inv</strong> – The location where there is resonance between the eigenmode and the continuum.
+Returns None if there is no resonance with the specified continuum.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a></p>
 </dd>
 </dl>
 </dd></dl>

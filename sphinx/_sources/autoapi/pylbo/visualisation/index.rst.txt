@@ -3,27 +3,16 @@
 
 .. py:module:: pylbo.visualisation
 
-.. autoapi-nested-parse::
 
-   
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
+   eigenfunctions/index.rst
+   modes/index.rst
+   spectra/index.rst
 
 
 Submodules
@@ -34,13 +23,10 @@ Submodules
 
    api/index.rst
    continua/index.rst
-   derived_eigenfunctions/index.rst
-   eigenfunction_interface/index.rst
-   eigenfunctions/index.rst
-   figure_manager/index.rst
-   legend_interface/index.rst
+   figure_window/index.rst
+   legend_handler/index.rst
    matrices/index.rst
    profiles/index.rst
-   spectra/index.rst
+   utils/index.rst
 
 

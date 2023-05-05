@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pylbo.utilities.debug &mdash; Pylbo stable documentation</title>
@@ -12,15 +12,16 @@
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="pylbo.utilities.logger" href="../logger/index.html" />
-    <link rel="prev" title="pylbo.utilities.datfile_utils" href="../datfile_utils/index.html" /> 
+    <link rel="prev" title="pylbo.utilities.datfiles.istream_reader" href="../datfiles/istream_reader/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -28,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> Pylbo
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Pylbo
           </a>
               <div class="version">
-                1.1.3 - stable
+                2.0.0 - stable
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -47,7 +52,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../../automation/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.automation</span></code></a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities</span></code></a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../datfile_utils/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.datfile_utils</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../datfiles/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.datfiles</span></code></a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.debug</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../logger/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.logger</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../toolbox/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.toolbox</span></code></a></li>
@@ -57,7 +62,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../../_version/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo._version</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../data_containers/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.data_containers</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../exceptions/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.exceptions</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../file_handler/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.file_handler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../testing/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.testing</span></code></a></li>
 </ul>
 </li>
@@ -78,11 +82,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../index.html">API Reference</a> &raquo;</li>
-          <li><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a> &raquo;</li>
-          <li><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities</span></code></a> &raquo;</li>
-      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.debug</span></code></li>
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a></li>
+          <li class="breadcrumb-item"><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities</span></code></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.debug</span></code></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../../_sources/autoapi/pylbo/utilities/debug/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -93,16 +97,12 @@
            <div itemprop="articleBody">
              
   <section id="module-pylbo.utilities.debug">
-<span id="pylbo-utilities-debug"></span><h1><a class="reference internal" href="#module-pylbo.utilities.debug" title="pylbo.utilities.debug"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.debug</span></code></a><a class="headerlink" href="#module-pylbo.utilities.debug" title="Permalink to this headline"></a></h1>
+<span id="pylbo-utilities-debug"></span><h1><a class="reference internal" href="#module-pylbo.utilities.debug" title="pylbo.utilities.debug"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities.debug</span></code></a><a class="headerlink" href="#module-pylbo.utilities.debug" title="Permalink to this heading"></a></h1>
 <section id="module-contents">
-<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline"></a></h2>
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this heading"></a></h2>
 <section id="functions">
-<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h3>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this heading"></a></h3>
+<table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.debug.get_debug_coolingcurves" title="pylbo.utilities.debug.get_debug_coolingcurves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_debug_coolingcurves</span></code></a>(filename)</p></td>
 <td><p></p></td>
@@ -118,6 +118,21 @@
 </tr>
 </tbody>
 </table>
+</section>
+<section id="attributes">
+<h3>Attributes<a class="headerlink" href="#attributes" title="Permalink to this heading"></a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.utilities.debug.ALIGN" title="pylbo.utilities.debug.ALIGN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ALIGN</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py data">
+<dt class="sig sig-object py" id="pylbo.utilities.debug.ALIGN">
+<span class="sig-prename descclassname"><span class="pre">pylbo.utilities.debug.</span></span><span class="sig-name descname"><span class="pre">ALIGN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'='</span></em><a class="reference internal" href="../../../../_modules/pylbo/utilities/debug.html#ALIGN"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.debug.ALIGN" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="pylbo.utilities.debug.get_debug_coolingcurves">
 <span class="sig-prename descclassname"><span class="pre">pylbo.utilities.debug.</span></span><span class="sig-name descname"><span class="pre">get_debug_coolingcurves</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/utilities/debug.html#get_debug_coolingcurves"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.utilities.debug.get_debug_coolingcurves" title="Permalink to this definition"></a></dt>
@@ -146,7 +161,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../datfile_utils/index.html" class="btn btn-neutral float-left" title="pylbo.utilities.datfile_utils" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../datfiles/istream_reader/index.html" class="btn btn-neutral float-left" title="pylbo.utilities.datfiles.istream_reader" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../logger/index.html" class="btn btn-neutral float-right" title="pylbo.utilities.logger" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

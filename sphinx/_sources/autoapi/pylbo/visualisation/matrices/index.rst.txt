@@ -3,12 +3,6 @@
 
 .. py:module:: pylbo.visualisation.matrices
 
-.. autoapi-nested-parse::
-
-   
-   ..
-       !! processed by numpydoc !!
-
 
 Module Contents
 ---------------
@@ -25,7 +19,7 @@ Classes
 
 .. py:class:: MatrixFigure(dataset, figsize, **kwargs)
 
-   Bases: :py:obj:`pylbo.visualisation.figure_manager.FigureWindow`
+   Bases: :py:obj:`pylbo.visualisation.figure_window.FigureWindow`
 
    
    Figure showing both matrices from a dataset.
@@ -47,33 +41,10 @@ Classes
 
    ..
        !! processed by numpydoc !!
-   .. py:method:: draw(self)
+   .. py:method:: draw()
 
       
       Draws the matrices.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      ..
-          !! processed by numpydoc !!
-
-   .. py:method:: _add_matrices(self)
-
-      
-      Adds the matrices to the figure windows.
 
 
 

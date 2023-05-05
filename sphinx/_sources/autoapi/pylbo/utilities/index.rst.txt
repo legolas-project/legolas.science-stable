@@ -3,27 +3,14 @@
 
 .. py:module:: pylbo.utilities
 
-.. autoapi-nested-parse::
 
-   
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
+   datfiles/index.rst
 
 
 Submodules
@@ -32,7 +19,6 @@ Submodules
    :titlesonly:
    :maxdepth: 1
 
-   datfile_utils/index.rst
    debug/index.rst
    logger/index.rst
    toolbox/index.rst

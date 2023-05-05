@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pylbo.visualisation.matrices &mdash; Pylbo stable documentation</title>
@@ -12,15 +12,16 @@
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="pylbo.visualisation.profiles" href="../profiles/index.html" />
-    <link rel="prev" title="pylbo.visualisation.legend_interface" href="../legend_interface/index.html" /> 
+    <link rel="prev" title="pylbo.visualisation.legend_handler" href="../legend_handler/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -28,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> Pylbo
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Pylbo
           </a>
               <div class="version">
-                1.1.3 - stable
+                2.0.0 - stable
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,22 +53,21 @@
 <li class="toctree-l3"><a class="reference internal" href="../../automation/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.automation</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../utilities/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.utilities</span></code></a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation</span></code></a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../eigenfunctions/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.eigenfunctions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modes/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.modes</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../spectra/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.spectra</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../api/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.api</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../continua/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.continua</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../derived_eigenfunctions/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.derived_eigenfunctions</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../eigenfunction_interface/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.eigenfunction_interface</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../eigenfunctions/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.eigenfunctions</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../figure_manager/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.figure_manager</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../legend_interface/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.legend_interface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../figure_window/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.figure_window</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../legend_handler/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.legend_handler</span></code></a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.matrices</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../profiles/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.profiles</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../spectra/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.spectra</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../utils/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.utils</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../_version/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo._version</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../data_containers/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.data_containers</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../exceptions/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.exceptions</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../file_handler/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.file_handler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../testing/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.testing</span></code></a></li>
 </ul>
 </li>
@@ -84,11 +88,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../index.html">API Reference</a> &raquo;</li>
-          <li><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a> &raquo;</li>
-          <li><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation</span></code></a> &raquo;</li>
-      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.matrices</span></code></li>
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo</span></code></a></li>
+          <li class="breadcrumb-item"><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation</span></code></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.matrices</span></code></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../../_sources/autoapi/pylbo/visualisation/matrices/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,16 +103,12 @@
            <div itemprop="articleBody">
              
   <section id="module-pylbo.visualisation.matrices">
-<span id="pylbo-visualisation-matrices"></span><h1><a class="reference internal" href="#module-pylbo.visualisation.matrices" title="pylbo.visualisation.matrices"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.matrices</span></code></a><a class="headerlink" href="#module-pylbo.visualisation.matrices" title="Permalink to this headline"></a></h1>
+<span id="pylbo-visualisation-matrices"></span><h1><a class="reference internal" href="#module-pylbo.visualisation.matrices" title="pylbo.visualisation.matrices"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pylbo.visualisation.matrices</span></code></a><a class="headerlink" href="#module-pylbo.visualisation.matrices" title="Permalink to this heading"></a></h1>
 <section id="module-contents">
-<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline"></a></h2>
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this heading"></a></h2>
 <section id="classes">
-<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h3>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this heading"></a></h3>
+<table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pylbo.visualisation.matrices.MatrixFigure" title="pylbo.visualisation.matrices.MatrixFigure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MatrixFigure</span></code></a></p></td>
 <td><p>Figure showing both matrices from a dataset.</p></td>
@@ -117,19 +117,13 @@
 </table>
 <dl class="py class">
 <dt class="sig sig-object py" id="pylbo.visualisation.matrices.MatrixFigure">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pylbo.visualisation.matrices.</span></span><span class="sig-name descname"><span class="pre">MatrixFigure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/visualisation/matrices.html#MatrixFigure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.visualisation.matrices.MatrixFigure" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="../figure_manager/index.html#pylbo.visualisation.figure_manager.FigureWindow" title="pylbo.visualisation.figure_manager.FigureWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pylbo.visualisation.figure_manager.FigureWindow</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pylbo.visualisation.matrices.</span></span><span class="sig-name descname"><span class="pre">MatrixFigure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/visualisation/matrices.html#MatrixFigure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.visualisation.matrices.MatrixFigure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="../figure_window/index.html#pylbo.visualisation.figure_window.FigureWindow" title="pylbo.visualisation.figure_window.FigureWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pylbo.visualisation.figure_window.FigureWindow</span></code></a></p>
 <p>Figure showing both matrices from a dataset.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pylbo.visualisation.matrices.MatrixFigure.draw">
-<span class="sig-name descname"><span class="pre">draw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/visualisation/matrices.html#MatrixFigure.draw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.visualisation.matrices.MatrixFigure.draw" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">draw</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/visualisation/matrices.html#MatrixFigure.draw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.visualisation.matrices.MatrixFigure.draw" title="Permalink to this definition"></a></dt>
 <dd><p>Draws the matrices.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pylbo.visualisation.matrices.MatrixFigure._add_matrices">
-<span class="sig-name descname"><span class="pre">_add_matrices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/pylbo/visualisation/matrices.html#MatrixFigure._add_matrices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pylbo.visualisation.matrices.MatrixFigure._add_matrices" title="Permalink to this definition"></a></dt>
-<dd><p>Adds the matrices to the figure windows.</p>
 </dd></dl>
 
 </dd></dl>
@@ -142,7 +136,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../legend_interface/index.html" class="btn btn-neutral float-left" title="pylbo.visualisation.legend_interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../legend_handler/index.html" class="btn btn-neutral float-left" title="pylbo.visualisation.legend_handler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../profiles/index.html" class="btn btn-neutral float-right" title="pylbo.visualisation.profiles" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

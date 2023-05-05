@@ -3,12 +3,6 @@
 
 .. py:module:: pylbo.utilities.logger
 
-.. autoapi-nested-parse::
-
-   
-   ..
-       !! processed by numpydoc !!
-
 
 Module Contents
 ---------------
@@ -34,27 +28,8 @@ Attributes
 
 
 .. py:data:: pylboLogger
-   
 
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
 
 .. py:function:: init_logger()
 
