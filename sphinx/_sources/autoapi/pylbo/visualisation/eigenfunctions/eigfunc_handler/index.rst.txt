@@ -19,6 +19,7 @@ Classes
 
 .. py:class:: EigenfunctionHandler(data, ef_ax, spec_ax)
 
+
    Bases: :py:obj:`pylbo.visualisation.eigenfunctions.eigfunc_interface.EigenfunctionInterface`
 
    

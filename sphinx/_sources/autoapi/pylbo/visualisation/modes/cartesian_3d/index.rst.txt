@@ -19,6 +19,7 @@ Classes
 
 .. py:class:: CartesianSlicePlot3D(data: pylbo.visualisation.modes.mode_data.ModeVisualisationData, u2: numpy.ndarray, u3: numpy.ndarray, time: float, slicing_axis: str, figsize: tuple[int, int], vmin: float = None, vmax: float = None, **kwargs)
 
+
    Bases: :py:obj:`pylbo.visualisation.modes.cartesian_2d.CartesianSlicePlot2D`
 
    
