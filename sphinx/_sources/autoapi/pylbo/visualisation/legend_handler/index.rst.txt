@@ -1,24 +1,21 @@
-:py:mod:`pylbo.visualisation.legend_handler`
-============================================
+pylbo.visualisation.legend_handler
+==================================
 
 .. py:module:: pylbo.visualisation.legend_handler
 
 
-Module Contents
----------------
-
 Classes
-~~~~~~~
+-------
 
 .. autoapisummary::
 
    pylbo.visualisation.legend_handler.LegendHandler
 
 
-
+Module Contents
+---------------
 
 .. py:class:: LegendHandler(interactive)
-
 
    
    Main handler for legend stuff.
@@ -105,6 +102,71 @@ Classes
 
    ..
        !! processed by numpydoc !!
+
+   .. py:attribute:: legend
+      :value: None
+
+
+
+   .. py:attribute:: alpha_point
+      :value: 0.8
+
+
+
+   .. py:attribute:: alpha_region
+      :value: 0.2
+
+
+
+   .. py:attribute:: alpha_hidden
+      :value: 0.05
+
+
+
+   .. py:attribute:: marker
+      :value: 'p'
+
+
+
+   .. py:attribute:: markersize
+      :value: 64
+
+
+
+   .. py:attribute:: pickradius
+      :value: 10
+
+
+
+   .. py:attribute:: linewidth
+      :value: 2
+
+
+
+   .. py:attribute:: legend_properties
+
+
+   .. py:attribute:: interactive
+
+
+   .. py:attribute:: autoscale
+      :value: False
+
+
+
+   .. py:attribute:: _drawn_items
+      :value: []
+
+
+
+   .. py:attribute:: _legend_mapping
+
+
+   .. py:attribute:: _make_visible_by_default
+      :value: False
+
+
+
    .. py:method:: on_legend_pick(event)
 
       
@@ -130,6 +192,7 @@ Classes
       ..
           !! processed by numpydoc !!
 
+
    .. py:method:: make_legend_pickable()
 
       
@@ -152,6 +215,7 @@ Classes
 
       ..
           !! processed by numpydoc !!
+
 
    .. py:method:: add(item)
 
@@ -178,6 +242,7 @@ Classes
 
       ..
           !! processed by numpydoc !!
+
 
    .. py:method:: _check_autoscaling()
 

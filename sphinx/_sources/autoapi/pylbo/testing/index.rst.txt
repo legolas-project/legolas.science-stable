@@ -1,23 +1,19 @@
-:py:mod:`pylbo.testing`
-=======================
+pylbo.testing
+=============
 
 .. py:module:: pylbo.testing
 
 
-Module Contents
----------------
-
 Classes
-~~~~~~~
+-------
 
 .. autoapisummary::
 
    pylbo.testing.FakeDataSet
 
 
-
 Functions
-~~~~~~~~~
+---------
 
 .. autoapisummary::
 
@@ -25,17 +21,17 @@ Functions
    pylbo.testing.load_pickled_dataseries
 
 
+Module Contents
+---------------
 
 .. py:function:: pickle_dataseries_to_file(series, filepath)
 
-
 .. py:function:: load_pickled_dataseries(filepath)
-
 
 .. py:class:: FakeDataSet(datfile, seed=None)
 
-
    Bases: :py:obj:`pylbo.data_containers.LegolasDataSet`
+
 
    
    Main container for a single Legolas dataset.
@@ -167,10 +163,10 @@ Functions
 
    ..
        !! processed by numpydoc !!
+
    .. py:method:: _set_test_equilibria()
 
 
    .. py:method:: _set_test_eigenvalues()
-
 
 

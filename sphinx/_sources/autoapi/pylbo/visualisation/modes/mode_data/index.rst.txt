@@ -1,24 +1,21 @@
-:py:mod:`pylbo.visualisation.modes.mode_data`
-=============================================
+pylbo.visualisation.modes.mode_data
+===================================
 
 .. py:module:: pylbo.visualisation.modes.mode_data
 
 
-Module Contents
----------------
-
 Classes
-~~~~~~~
+-------
 
 .. autoapisummary::
 
    pylbo.visualisation.modes.mode_data.ModeVisualisationData
 
 
-
+Module Contents
+---------------
 
 .. py:class:: ModeVisualisationData(ds: pylbo.data_containers.LegolasDataSet, omega: list[complex], ef_name: str = None, use_real_part: bool = True, complex_factor: complex = None, add_background: bool = False)
-
 
    
    Class that contains the data used for eigenmode visualisations.
@@ -88,8 +85,52 @@ Classes
 
    ..
        !! processed by numpydoc !!
+
+   .. py:attribute:: ds
+
+
+   .. py:attribute:: use_real_part
+      :value: True
+
+
+
+   .. py:attribute:: complex_factor
+      :value: None
+
+
+
+   .. py:attribute:: add_background
+      :value: False
+
+
+
+   .. py:attribute:: _print_bg_info
+      :value: True
+
+
+
+   .. py:attribute:: _ef_name
+      :value: None
+
+
+
+   .. py:attribute:: _ef_name_latex
+      :value: None
+
+
+
+   .. py:attribute:: _all_efs
+
+
+   .. py:attribute:: omega
+
+
+   .. py:attribute:: eigenfunction
+
+
    .. py:property:: k2
       :type: float
+
 
       
       The k2 wave number of the eigenmode solution.
@@ -112,8 +153,10 @@ Classes
       ..
           !! processed by numpydoc !!
 
+
    .. py:property:: k3
       :type: float
+
 
       
       The k3 wave number of the eigenmode solution.
@@ -136,8 +179,10 @@ Classes
       ..
           !! processed by numpydoc !!
 
+
    .. py:property:: part_name
       :type: str
+
 
       
       Returns the name of the part of the eigenmode solution to use, i.e.
@@ -160,6 +205,7 @@ Classes
 
       ..
           !! processed by numpydoc !!
+
 
    .. py:method:: _get_all_efs(ds: pylbo.data_containers.LegolasDataSet, omega: List[complex]) -> numpy.ndarray
 
@@ -194,6 +240,7 @@ Classes
       ..
           !! processed by numpydoc !!
 
+
    .. py:method:: get_ef_name_latex() -> str
 
       
@@ -216,6 +263,7 @@ Classes
 
       ..
           !! processed by numpydoc !!
+
 
    .. py:method:: _validate_complex_factor(complex_factor: complex) -> complex
 
@@ -244,6 +292,7 @@ Classes
 
       ..
           !! processed by numpydoc !!
+
 
    .. py:method:: get_mode_solution(ef: numpy.ndarray, omega: complex, u2: Union[float, numpy.ndarray], u3: Union[float, numpy.ndarray], t: Union[float, numpy.ndarray]) -> numpy.ndarray
 
@@ -285,6 +334,7 @@ Classes
       ..
           !! processed by numpydoc !!
 
+
    .. py:method:: get_background(shape: tuple[int, Ellipsis], name=None) -> numpy.ndarray
 
       
@@ -317,6 +367,7 @@ Classes
       ..
           !! processed by numpydoc !!
 
+
    .. py:method:: _sample_background_on_ef_grid(bg: numpy.ndarray) -> numpy.ndarray
 
       
@@ -344,6 +395,7 @@ Classes
 
       ..
           !! processed by numpydoc !!
+
 
    .. py:method:: _get_background_name() -> str
 

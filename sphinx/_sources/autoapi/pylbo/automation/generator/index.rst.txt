@@ -1,23 +1,19 @@
-:py:mod:`pylbo.automation.generator`
-====================================
+pylbo.automation.generator
+==========================
 
 .. py:module:: pylbo.automation.generator
 
 
-Module Contents
----------------
-
 Classes
-~~~~~~~
+-------
 
 .. autoapisummary::
 
    pylbo.automation.generator.ParfileGenerator
 
 
-
 Functions
-~~~~~~~~~
+---------
 
 .. autoapisummary::
 
@@ -26,6 +22,8 @@ Functions
    pylbo.automation.generator._validate_output_dir
 
 
+Module Contents
+---------------
 
 .. py:function:: _ensure_nb_names_and_nb_runs_matches(names: Union[str, list[str]], nb_runs: int) -> list[str]
 
@@ -120,7 +118,6 @@ Functions
 
 .. py:class:: ParfileGenerator(parfile_dict, basename=None, output_dir=None, subdir=True, prefix_numbers=True, nb_prefix_digits=4)
 
-
    
    Handles parfile generation.
 
@@ -160,6 +157,39 @@ Functions
 
    ..
        !! processed by numpydoc !!
+
+   .. py:attribute:: parfile_dict
+
+
+   .. py:attribute:: nb_runs
+
+
+   .. py:attribute:: basenames
+      :value: ['parfile']
+
+
+
+   .. py:attribute:: output_dir
+
+
+   .. py:attribute:: _use_prefix
+      :value: True
+
+
+
+   .. py:attribute:: _nb_prefix_digits
+      :value: 4
+
+
+
+   .. py:attribute:: parfiles
+      :value: []
+
+
+
+   .. py:attribute:: container
+
+
    .. py:method:: _get_and_check_item(namelist, name, allowed_dtypes)
 
       
@@ -196,6 +226,7 @@ Functions
       ..
           !! processed by numpydoc !!
 
+
    .. py:method:: create_namelist_from_dict()
 
       
@@ -220,6 +251,7 @@ Functions
 
       ..
           !! processed by numpydoc !!
+
 
    .. py:method:: generate_parfiles()
 
