@@ -178,7 +178,7 @@
             <a class="list-group-item" href="../module/mod_settings.html#proc-set_nb_eqs">set_nb_eqs</a>
             <a class="list-group-item" href="../module/mod_settings.html#proc-update_block_dimensions">update_block_dimensions</a>
             <a class="list-group-item" href="../module/mod_settings.html#proc-check_bfield">check_bfield</a>
-            <a class="list-group-item" href="../module/mod_settings.html#proc-delete~7">delete</a>
+            <a class="list-group-item" href="../module/mod_settings.html#proc-delete~18">delete</a>
         </div>
       </div>
     </div>
@@ -204,14 +204,14 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <ul class="list-inline">
-                  <li class="list-inline-item"><a href='mod_equilibrium_settings.html'>mod_equilibrium_settings</a></li>
-                  <li class="list-inline-item"><a href='mod_units.html'>mod_units</a></li>
-                  <li class="list-inline-item"><a href='mod_solver_settings.html'>mod_solver_settings</a></li>
-                  <li class="list-inline-item"><a href='mod_global_variables.html'>mod_global_variables</a></li>
-                  <li class="list-inline-item"><a href='mod_grid_settings.html'>mod_grid_settings</a></li>
-                  <li class="list-inline-item"><a href='mod_dims.html'>mod_dims</a></li>
-                  <li class="list-inline-item"><a href='mod_io_settings.html'>mod_io_settings</a></li>
                   <li class="list-inline-item"><a href='mod_physics_settings.html'>mod_physics_settings</a></li>
+                  <li class="list-inline-item"><a href='mod_io_settings.html'>mod_io_settings</a></li>
+                  <li class="list-inline-item"><a href='mod_dims.html'>mod_dims</a></li>
+                  <li class="list-inline-item"><a href='mod_equilibrium_settings.html'>mod_equilibrium_settings</a></li>
+                  <li class="list-inline-item"><a href='mod_global_variables.html'>mod_global_variables</a></li>
+                  <li class="list-inline-item"><a href='mod_units.html'>mod_units</a></li>
+                  <li class="list-inline-item"><a href='mod_grid_settings.html'>mod_grid_settings</a></li>
+                  <li class="list-inline-item"><a href='mod_solver_settings.html'>mod_solver_settings</a></li>
               </ul>
             </li>
         </ul>
@@ -270,7 +270,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-derived_state_vector~2"></span>
+              <span class="anchor" id="variable-derived_state_vector~3"></span>
               character(len=str_len_arr),
             </td>
               <td>private,</td>
@@ -287,7 +287,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-physics_type"></span>
+              <span class="anchor" id="variable-physics_type~2"></span>
               character(len=:),
             </td>
               <td>private,</td>
@@ -321,7 +321,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-nb_eqs~3"></span>
+              <span class="anchor" id="variable-nb_eqs~2"></span>
               integer,
             </td>
               <td>private</td>
@@ -389,7 +389,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-physics~40"></span>
+              <span class="anchor" id="variable-physics~58"></span>
               type(<a href='../type/physics_settings_t.html'>physics_settings_t</a>),
             </td>
               <td>public</td>
@@ -406,7 +406,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-grid~49"></span>
+              <span class="anchor" id="variable-grid~74"></span>
               type(<a href='../type/grid_settings_t.html'>grid_settings_t</a>),
             </td>
               <td>public</td>
@@ -423,7 +423,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-equilibrium"></span>
+              <span class="anchor" id="variable-equilibrium~2"></span>
               type(<a href='../type/equilibrium_settings_t.html'>equilibrium_settings_t</a>),
             </td>
               <td>public</td>
@@ -440,7 +440,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-units"></span>
+              <span class="anchor" id="variable-units~2"></span>
               type(<a href='../type/units_t.html'>units_t</a>),
             </td>
               <td>public</td>
@@ -516,7 +516,7 @@
               </tr>
               <tr>
                 <td>  procedure, public ::
-  <strong><a href='../type/settings_t.html#boundprocedure-delete~7'>delete</a></strong></td>
+  <strong><a href='../type/settings_t.html#boundprocedure-delete~18'>delete</a></strong></td>
                   <td></td>
               </tr>
               <tr>
@@ -577,7 +577,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~99"></span>
+              <span class="anchor" id="variable-this~176"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(in)</td>
@@ -622,7 +622,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~100"></span>
+              <span class="anchor" id="variable-this~177"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(in)</td>
@@ -667,7 +667,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~102"></span>
+              <span class="anchor" id="variable-this~179"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(in)</td>
@@ -712,7 +712,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~103"></span>
+              <span class="anchor" id="variable-this~180"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(in)</td>
@@ -757,7 +757,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~104"></span>
+              <span class="anchor" id="variable-this~181"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(in)</td>
@@ -802,7 +802,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~106"></span>
+              <span class="anchor" id="variable-this~183"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(in)</td>
@@ -847,7 +847,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~109"></span>
+              <span class="anchor" id="variable-this~186"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(in)</td>
@@ -897,7 +897,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~98"></span>
+              <span class="anchor" id="variable-this~175"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(inout)</td>
@@ -912,7 +912,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-physics_type~2"></span>
+              <span class="anchor" id="variable-physics_type~3"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -952,7 +952,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~101"></span>
+              <span class="anchor" id="variable-this~178"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(inout)</td>
@@ -967,7 +967,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-derived_state_vector~3"></span>
+              <span class="anchor" id="variable-derived_state_vector~4"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1007,7 +1007,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~105"></span>
+              <span class="anchor" id="variable-this~182"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(inout)</td>
@@ -1022,7 +1022,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-nb_eqs~4"></span>
+              <span class="anchor" id="variable-nb_eqs~3"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -1062,7 +1062,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~107"></span>
+              <span class="anchor" id="variable-this~184"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(inout)</td>
@@ -1102,7 +1102,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~108"></span>
+              <span class="anchor" id="variable-this~185"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(inout)</td>
@@ -1123,7 +1123,7 @@
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-delete~7"></span> <h3>private pure subroutine <a href='../proc/delete~7.html'>delete</a>(this)  
+    <div class="card-header codesum"><span class="anchor" id="proc-delete~18"></span> <h3>private pure subroutine <a href='../proc/delete~18.html'>delete</a>(this)  
 </h3></div>
     <div class="card-body">
           
@@ -1142,7 +1142,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-this~110"></span>
+              <span class="anchor" id="variable-this~187"></span>
               class(<a href='../type/settings_t.html'>settings_t</a>),
             </td>
 <td>intent(inout)</td>
